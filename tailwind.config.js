@@ -7,8 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        customPink: 'F9F2F2',
+        customPink: '#F9F2F2',
+        colorPurple: '#4B0082',
     },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        opensans: ['Open Sans', 'sans-serif'],
+      },
   },
   plugins: [],
 }
