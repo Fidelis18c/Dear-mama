@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <div className='bg-purple-700 text-white pt-8 pl-10'>
+    <div className='bg-purple-700 text-white pt-8 pb-5 pl-10'>
       <div>Contact Us</div>
        <div className='flex gap-2 '>
            <div><a href=""><><FaFacebook /></></a></div>

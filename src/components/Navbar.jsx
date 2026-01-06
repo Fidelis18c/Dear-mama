@@ -1,6 +1,7 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import DearMama from '../assets/DearMama.png'
 import { FaChevronDown} from 'react-Icons/fa'
+
 
 
 const Navbar = () => {
@@ -19,15 +20,15 @@ const Navbar = () => {
 
       <div className='flex items-center gap-7  font-opensans font-thin  '>
         <div> <a href=""className='hover:text-purple-700'>About us</a></div>
-           <div className='flex items-center gap-1 hover:text-purple-700'> <a href="">What we Do</a>
+           <div className='flex items-center gap-1 hover:text-purple-700'> <Link to="/whatwedo">What we Do</Link>
                 <div><FaChevronDown className='h-3 mt-1' /></div>
           </div>
-        <div className='flex items-center gap-2 hover:text-purple-700 '> <a href="" className=''>Events and Reports</a>
+        <div className='flex items-center gap-2 hover:text-purple-700 '> <Link to="/events" className=''>Events and Reports</Link>
         <FaChevronDown className='h-3 mt-1' />
         </div>
-        <div> <a href="" className='hover:text-purple-700'>Contact Us</a></div>
+        <div> <Link to="/contact" className='hover:text-purple-700'>Contact Us</Link></div>
         </div>
-         <div className="pl-10 "><a href="" className='border-2 rounded-full px-4 py-2 bg-purple-500 text-white hover:bg-purple-700'>Get Involved</a></div>
+         <div className="pl-10 "><Link to="/getinvolved" className='border-2 rounded-full px-4 py-2 bg-purple-500 text-white hover:bg-purple-700'>Get Involved</Link></div>
       </div>
       
     </>
