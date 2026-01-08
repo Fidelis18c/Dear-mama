@@ -8,13 +8,19 @@ import './index.css';
 import Footer from './components/Footer.jsx'
 import MainLayout from './Layout/MainLayout.jsx'; 
 import HomePage from './pages/HomePage.jsx';
-import WhatWeDo from './pages/WhatWeDo.jsx';
+import WhatWeDo from './pages/WhatWeDoPage.jsx';
+import AboutUsPage from './pages/AboutUsPage.jsx';
+import ContactUsPage from './pages/ContactUsPage.jsx';
+import EventsPage from './pages/EventsPage.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />}>
       <Route index element={<HomePage />} />
       <Route path="/whatwedo" element={<WhatWeDo />} />
+      <Route path="/aboutus" element={<AboutUsPage />} />
+      <Route path="/contactus" element={<ContactUsPage />} />
+      <Route path="/events" element={<EventsPage />} />
     </Route>
   )
 );

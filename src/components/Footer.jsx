@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import DearMama from '../assets/DearMama.png'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa6'
 
@@ -14,9 +15,9 @@ const Footer = () => {
 
        <div>
           <div>
-           <a href=""> <img src={DearMama} 
+           <Link to=""> <img src={DearMama} 
              alt="Dear Mama Foundation"
-             className='w-20  h-15 mt-2' /></a>
+             className='w-20  h-15 mt-2' /></Link>
           </div>
         <p>© 2026 DEAR MAMA FOUNDATION.</p>
        </div>

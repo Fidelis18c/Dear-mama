@@ -9,17 +9,18 @@ const Navbar = () => {
     <>
     <div className='flex items-center justify-between pb-1 pr-10 bg-customPink'>
        <div className='flex items-center gap-2'>
-        <img src={DearMama} 
+        <Link to="/"> <img src={DearMama} 
            alt="Dear Mama Foundation"
-           className='w-20  h-15 ml-5 mt-2' />
+           className='w-20  h-15 ml-5 mt-2' /></Link>
+       
 
         <div className='text-1xl font-opensans'>
-            <b>DEAR MAMA</b>  FOUNDATION
+          <Link to="/"><b>DEAR MAMA</b>  FOUNDATION</Link>  
         </div>
       </div>
 
       <div className='flex items-center gap-7  font-opensans font-thin  '>
-        <div> <a href=""className='hover:text-purple-700'>About us</a></div>
+        <div> <Link to="/aboutus" className='hover:text-purple-700'>About us</Link></div>
            <div className='flex items-center gap-1 hover:text-purple-700'> <Link to="/whatwedo">What we Do</Link>
                 <div><FaChevronDown className='h-3 mt-1' /></div>
           </div>

@@ -18,6 +18,11 @@ export default {
       animation: {
         marquee: 'slide-in-out 15s linear infinite',
   },
+  boxShadow: {
+       
+        'white-sm': '0 1px 3px 0 rgba(255, 255, 255, 0.4)', 
+        'white-lg': '0 10px 15px -3px rgba(255, 255, 255, 0.7), 0 4px 6px -2px rgba(255, 255, 255, 0.5)', // Larger, more visible white
+      },
       keyframes: {
         'slide-in-out': {
           '0%': { transform: 'translateX(-100%)' },  // Start off-screen left
