@@ -24,7 +24,7 @@ const Navbar = () => {
            <div className='flex items-center gap-1 hover:text-purple-700'> <Link to="/whatwedo">What we Do</Link>
                 <div><FaChevronDown className='h-3 mt-1' /></div>
           </div>
-        <div className='flex items-center gap-2 hover:text-purple-700 '> <Link to="/events" className=''>Events and Reports</Link>
+        <div className='flex items-center gap-2 hover:text-purple-700 '> <Link to="/report" className=''>Events and Reports</Link>
         <FaChevronDown className='h-3 mt-1' />
         </div>
         <div> <Link to="/contact" className='hover:text-purple-700'>Contact Us</Link></div>

@@ -5,11 +5,10 @@ import JonaImage from '../assets/Jona.png'
 import StanImage from '../assets/Stan.png'
 import EmmaImage from '../assets/Emma.png'
 import MariamImage from '../assets/Mariam.png'
-import { FaChartLine } from 'react-icons/fa'
-import { FaHandHoldingHeart } from 'react-icons/fa'
-import { FaShieldAlt } from 'react-icons/fa'
-import { FaHandshake } from 'react-icons/fa'
-import { FaShieldHalved, FaUserShield } from 'react-icons/fa6'
+import { FaChartLine } from 'react-icons/fa6'
+import { FaHandHoldingHeart } from 'react-icons/fa6'
+import { FaHandshake } from 'react-icons/fa6'
+import { FaShieldHalved } from 'react-icons/fa6'
 
 
 const Aboutus = () => {
@@ -174,7 +173,7 @@ const Aboutus = () => {
             </div>
 
             <div >
-              <h1 className='text-center text-xs-2 p-6'>From Our hands to their hearts</h1>
+              <h1 className='text-center text-xs-2 p-10'>From Our hands to their hearts</h1>
             </div>
     </div>
   )
