@@ -1,9 +1,9 @@
-import React from 'react'
+import ContactUs from '../components/ContactUs.jsx'
 
 const ContactUsPage = () => {
   return (
     <div>
-      
+      <ContactUs />
     </div>
   )
 }
