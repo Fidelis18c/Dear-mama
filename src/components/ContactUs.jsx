@@ -12,70 +12,65 @@ const ContactUs = () => {
         className='w-full h-[40rem]' />
       </div>
 
-<div className='flex items-center'>
-   
-      <div className="w-full px-6 bg-customPink">
-        <h2 className="text-2xl font-semibold mb-10 text-gray-800">Write to us</h2>
-      <div className='flex items-center gap-4'>
-      <div>
-       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-10">
+    <div className='flex flex-row  bg-customPink  '>
+
       
-        <div>
-         <label className="block text-sm text-gray-600 mb-2">Name</label>
+   <div className='ml-[10rem] mt-5'>
+   <div className='pl-10 bg-customPink'>
+      <div>
+        <h2 className="text-2xl font-semibold mb-4">Write to us</h2>
+      </div>
+
+ 
+
+      <div className='grid grid-cols-2  gap-20 mb-10 '>
+         <div>
+          <label className="w-full block text-sm text-gray-600 mb-2">Name</label>
           <input
-           type="text"
-          className="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-black"
-         />
+            type="text"
+            className="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-black"
+          />
          </div>
 
-       <div>
-         <label className="block text-sm text-gray-600 mb-2">Email</label>
+        <div>
+          <label className="block text-sm text-gray-600 mb-2">Email</label>
           <input
-           type="email"
-           className="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-black"
-         />
-       </div>
+            type="email"
+            className="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-black"
+          />
+        </div>
+      </div>
 
-     
-     </div>
-   
+      <div>
+        <label className="block text-sm text-gray-600 mb-2">Write something</label>
+        <textarea
+          rows="4"
+          className="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-black"
+        ></textarea>
+      </div>
 
-
-     <div className="mb-12">
-       <label className="block text-sm text-gray-600 mb-4">
-         Write something...
-       </label>
-       <textarea
-         rows="3"
-         className="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-black resize-none"
-       ></textarea>
-     </div>
-
-
-    <button
-      className="bg-orange-500 text-white px-6 py-3 text-sm tracking-wide hover:bg-orange-600 transition">
-      SEND A MESSAGE
-    </button>
+      <button className="bg-purple-500 text-white px-6 py-2 mb-10 mt-5 hover:bg-purple-700 transition duration-300">
+        SEND MESSAGE
+      </button>
+    </div>
   </div>
-   </div>
- </div>
 
 
-     <div className='bg-white rounded-lg text-black h-19 pl-10'>
-        <h1>CONTACT</h1>
 
-        <h2>Address</h2>
-        <p>Kichangani, P.O.BOX  235.</p>
-        <p>Katavi, Tanzania</p>
-
-        <h2>Email</h2>
-        <p>info@dearmamafoundation.org</p>
-
-        <h2>Phone Number</h2>
-        <p>+255694007665</p>
-     </div> 
-
+     <div className='bg-white rounded-lg max-w-80 p-7 pr-5 mb-10 mt-12 ml-[15rem]'>
+      <div className=''>
+      <h2 className="text-xl font-semibold mb-4">CONTACTS</h2>
+      <h3 className=" font-medium">Address</h3>
+      <p>Kichangani, P.O.BOX  235,</p>
+      <p>Katavi, Tanzania.</p>
+      <h3 className=" font-medium mt-2">E-mail</h3>
+      <p className="">info@dearmamafoundation.org</p>
+      <h3 className=" font-medium mt-2">Phone number</h3>
+      <p>+255694007665</p>
+      </div>
      </div>
+</div>
+
     </>
   )
 }
