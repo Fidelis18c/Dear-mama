@@ -4,8 +4,30 @@ import ImpactOneImage from '../assets/Impact1.png';
 import ImpactTwoImage from '../assets/Impact2.png';
 import ImpactThreeImage from '../assets/Impact3.png';
 import { FaArrowRight } from 'react-icons/fa6';
+import { Link, useNavigate } from 'react-router-dom';
+
+
+
+
 
 const HeroSection = () => {
+
+  const navigate = useNavigate();
+
+  const handleWhoWeAreClick = () => {
+    navigate('/aboutus');
+  }
+
+ const goToImport = (id) => {
+    navigate(`/whatwedo#${id}`);
+  }
+
+  
+
+
+ 
+
+
   return (
     <>
      {/* Hero Section */}
@@ -34,12 +56,9 @@ const HeroSection = () => {
             </p>
 
   
-            <a 
-                href="#who-we-are" 
-                className='inline-block border-2 border-white px-8 py-3 rounded-md text-lg transition duration-300 hover:bg-white hover:text-gray-800'
-            >
+             <button className='inline-block border-2 border-white px-8 py-3 rounded-md text-lg transition duration-300 hover:bg-white hover:text-gray-800' onClick={handleWhoWeAreClick} >
                 Who we Are
-            </a>
+            </button>
           </div>
         </div>
       </div> 
@@ -69,7 +88,7 @@ const HeroSection = () => {
               </div>
 
              <div className=' text-right pr-4 text-right border-2 rounded-full mt-[4rem] ml-[10rem] mr-[1rem] py-2 bg-purple-500 text-white hover:bg-purple-700'>
-              <a href="" className=''>Read More</a>
+              <button onClick={() => goToImport('Empowering')} className=''>Read More</button>
               <FaArrowRight className='inline-block ml-2' />
              </div>
            </div>
@@ -90,7 +109,7 @@ const HeroSection = () => {
                and crucial advisory and emotional support to foster dignity and hope during difficult times.</p>
             </div>
             <div className='text-right pr-4  text-right border-2 rounded-full mt-[3rem] ml-[10rem] mr-[1rem] py-2 bg-purple-500 text-white hover:bg-purple-700 '>
-               <a href="" className=''>Read More</a>
+               <button onClick={() => goToImport('Well-being')} className=''>Read More</button>
                <FaArrowRight className='inline-block ml-2' />
            </div>
         </div>
@@ -110,7 +129,7 @@ const HeroSection = () => {
               Our youth network ensures immediate material aid and relief reaches affected communities rapidly when they need it most.</p>
            </div>
           <div className=' text-right pr-4 border-2 rounded-full mt-[3rem] ml-[10rem] mr-[1rem] py-2 bg-purple-500 text-white hover:bg-purple-700 '>
-            <a href="" className=''>Read More</a>
+            <button onClick={() => goToImport('Rapid')} className=''>Read More</button>
             <FaArrowRight className='inline-block ml-2' />
           </div>
         </div>
