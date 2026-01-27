@@ -39,12 +39,7 @@ const WhatWeDo = () => {
           <div className="overflow-x-hidden">
            <div className='grid grid-cols-2 gap-4 p-20'>
         
-            <motion.div
-            initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={slideInRight}
-       >
+
                <div >
                     <h1 id='Empowering'  className='scroll-mt-24 transition-all duration-700 font-Montserrat text-black-500 text-2xl font-semibold pb-3 pt-2'>Empowering future generation.</h1>
 
@@ -66,7 +61,7 @@ const WhatWeDo = () => {
                </div>
            </div>
 
-          </motion.div>
+         
 
            {/* TASK2 */}
 

@@ -1,15 +1,13 @@
-import React , {useState} from 'react'
+import React from 'react'
 import { FaChartLine } from 'react-icons/fa6'
 import { FaHandHoldingHeart } from 'react-icons/fa6'
 import { FaHandshake } from 'react-icons/fa6'
 import { FaShieldHalved } from 'react-icons/fa6'
 
-
-const Aboutus = () => {
-
+const Values = () => {
   return (
     <div>
-   
+      
 
             <div>
             
@@ -51,8 +49,9 @@ const Aboutus = () => {
             <div >
               <h1 className='text-center text-xs-2 p-10'>From Our hands to their hearts</h1>
             </div>
+
     </div>
   )
 }
 
-export default Aboutus
+export default Values

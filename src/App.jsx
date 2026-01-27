@@ -13,6 +13,11 @@ import AboutUsPage from './pages/AboutUsPage.jsx';
 import ContactUsPage from './pages/ContactUsPage.jsx';
 import EventsPage from './pages/EventsPage.jsx';
 import ReportPage from './pages/ReportPage.jsx';
+import History from './components/History.jsx';
+import Leadership from './components/Leadership.jsx';
+import Values from './components/Values.jsx';
+import Navbar from './components/Navbar.jsx';
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,8 +26,11 @@ const router = createBrowserRouter(
       <Route path="/whatwedo" element={<WhatWeDo />} />
       <Route path="/aboutus" element={<AboutUsPage />} />
       <Route path="/contact" element={<ContactUsPage />} />
-      <Route path="/events" element={<EventsPage />} />
-      <Route path="/report" element={<ReportPage />} />
+      <Route path="/events" element={<Navbar />} />
+      <Route path="/report" element={<Navbar />} />
+      <Route path="/history" element={<History />} />
+      <Route path="/leadership" element={<Leadership />} />
+      <Route path="/values" element={<Values />} />
     </Route>
   )
 );
