@@ -3,6 +3,7 @@ import { FaChartLine } from 'react-icons/fa6'
 import { FaHandHoldingHeart } from 'react-icons/fa6'
 import { FaHandshake } from 'react-icons/fa6'
 import { FaShieldHalved } from 'react-icons/fa6'
+import { motion } from 'framer-motion';
 
 const Values = () => {
   return (

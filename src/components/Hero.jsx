@@ -1,16 +1,35 @@
+import { useState , useEffect } from 'react';
 import React from 'react';
-import HeroImage from '../assets/Hero.png';
+import HeroImage1 from '../assets/Hero1.png';
+import HeroImage2 from '../assets/Hero2.png';
+import HeroImage3 from '../assets/Hero3.png';
+import HeroImage4 from '../assets/Hero4.png'; 
 import ImpactOneImage from '../assets/Impact1.png';
 import ImpactTwoImage from '../assets/Impact2.png';
 import ImpactThreeImage from '../assets/Impact3.png';
 import { FaArrowRight } from 'react-icons/fa6';
 import { Link, useNavigate } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 
 
 
 
 const HeroSection = () => {
+
+  const images = [HeroImage1, HeroImage2, HeroImage3, HeroImage4];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+  
+   return () => clearInterval(interval); // Cleanup on unmount
+    }, [images.length]);
+
+
+  
 
   const navigate = useNavigate();
 
@@ -33,12 +52,37 @@ const HeroSection = () => {
      {/* Hero Section */}
       <div className='relative h-[34rem]'>
           
-        <img 
-          src={HeroImage} 
+        {/* <img 
+          src={HeroImage1} 
           alt="HeroBackground" 
           className='absolute inset-0 w-full h-full object-cover' 
+        /> */}
+
+        {/* {images.map((img, index) => (
+        <img
+          key={index}
+          src={img}
+          alt={`Slide ${index}`}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+            index === currentIndex ? 'opacity-100' : 'opacity-0'
+          }`}
         />
-          
+      ))} */}
+             <div
+        className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
+        style={{
+          transform: `translateX(-${currentIndex * 100}%)`,
+        }}
+      >
+        {images.map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt={`Slide ${index}`}
+            className="w-full h-full object-cover flex-shrink-0"
+          />
+        ))}
+      </div>
         
         <div className='absolute inset-0 flex items-center justify-start text-white'>
             
@@ -73,7 +117,18 @@ const HeroSection = () => {
              </div>
 
         {/* CARD1 */}
+
     <div className='flex flex-col md:flex-row gap-10 justify-center items-center mt-10'>
+      
+   <motion.div 
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ scale: 1.05 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+      
+    >
+      
          <div className='max-w-xs bg-gray-100 rounded-xl overflow-hidden shadow-md ml-[4rem] pb-[2rem]'>
               <div>
                 <img src={ImpactOneImage} 
@@ -92,10 +147,17 @@ const HeroSection = () => {
               <FaArrowRight className='inline-block ml-2' />
              </div>
            </div>
-        
+        </motion.div>
 
     {/* CARD2 */}
-
+ <motion.div 
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ scale: 1.05 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+      
+    >
          <div className='max-w-xs bg-gray-100 rounded-xl overflow-hidden shadow-md  pb-[2rem]'>
             <div>
               <img src={ImpactTwoImage} 
@@ -113,9 +175,18 @@ const HeroSection = () => {
                <FaArrowRight className='inline-block ml-2' />
            </div>
         </div>
+  </motion.div>
 
+  
 {/* CARD3 */}
 
+        <motion.div 
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{ scale: 1.05 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+        >
         <div className='max-w-xs bg-gray-100 rounded-xl overflow-hidden shadow-md mr-[4rem] pb-[2rem]'>
           <div>
              <img src={ImpactThreeImage} 
@@ -132,16 +203,29 @@ const HeroSection = () => {
             <button onClick={() => goToImport('Rapid')} className=''>Read More</button>
             <FaArrowRight className='inline-block ml-2' />
           </div>
+         
         </div>
-
+ </motion.div>
        </div>
+      
     </div>
       </div>
 
 {/* SLOGAN SECTION */}
-      <div className=''>
-        <h2 className='text-center text-xs-3xl font-montserrat Alternates pt-5 pb-5'>From  Our Hands To Thier Hearts</h2>
-      </div>
+  <motion.div
+  className="pt-5 pb-5"
+  animate={{ x: [-50, 50, -50] }}
+  transition={{
+    duration: 6,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
+  <h2 className="text-center text-2xl font-montserrat">
+    From Our Hands To Their Hearts
+  </h2>
+</motion.div>
+      
     </>
   );
 };
