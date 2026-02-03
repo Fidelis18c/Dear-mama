@@ -48,39 +48,35 @@ const Navbar = () => {
         </div>
 
          {/* Dropdown menu for About Us */}
+         
+         {AboutusDropdownOpen && (
+  
+  <div className="fixed top-[90px] left-0 w-full h-[25vh] bg-white shadow-2xl border-t border-gray-100 z-50">
+    
+    <div className="max-w-7xl mx-auto h-full flex flex-col justify-center items-start px-20">
+      
+      <div className="flex flex-col space-y-4">
+        <Link 
+          to="/history" 
+          className="text-1xl font-bold text-gray-800 hover:text-purple-700 transition-colors"
+          onClick={() => setAboutusDropdownOpen(false)}
+        >
+          Our History
+        </Link>
 
-    {
-      AboutusDropdownOpen && (
-          <ul className="absolute top-full left-0 mt-2 w-48 bg-white shadow-xl border rounded-md overflow-hidden z-50">
-            <li className="hover:bg-purple-50 border-b border-gray-100">
-              <Link 
-                to="/history" 
-                className="block p-3 text-gray-700"
-                onClick={() => setAboutusDropdownOpen(false)} // Closes menu after clicking
-              >
-                Our History
-              </Link>
-            </li>
-            <li className="hover:bg-purple-50 border-b border-gray-100">
-              <Link 
-                to="/values" 
-                className="block p-3 text-gray-700"
-                onClick={() => setAboutusDropdownOpen(false)}
-              >
-                Our Core Values
-              </Link>
-            </li>
-            <li className="hover:bg-purple-50">
-              <Link 
-                to="/leadership" 
-                className="block p-3 text-gray-700"
-                onClick={() => setAboutusDropdownOpen(false)}
-              >
-                Our Leadership
-              </Link>
-            </li>
-          </ul>
-        )}
+  
+        <Link 
+          to="/leadership" 
+          className="text-1xl font-bold text-gray-800 hover:text-purple-700 transition-colors"
+          onClick={() => setAboutusDropdownOpen(false)}
+        >
+          Our Leadership
+        </Link>
+      </div>
+    </div>
+  </div>
+)}
+
         </div>
         
 
@@ -89,35 +85,46 @@ const Navbar = () => {
        
  </div>
   
+
      <div className='relative'>
-           <div onClick={handleReportToggle}
-            className='flex items-center gap-1 hover:text-purple-700'> <Link to="">Events and Reports</Link>
-              <FaChevronDown  className={`h-3 mt-1 transition-transform ${reportDropdownOpen ? 'rotate-180' : ''}`}/>
-            </div>
-                
-          {reportDropdownOpen && (
-            <ul className="absolute top-full left-0 mt-2 w-48 bg-white shadow-xl border rounded-md overflow-hidden z-[999]">
-                <li className="hover:bg-purple-50 border-b border-gray-100">
-                <Link 
-                to="/latestevents" 
-                  className="block p-3 text-gray-700" 
-                   onClick={() => setReportDropdownOpen(false)}
-                 >
-                     Latest Events
-                  </Link>
-         </li>
-          <li className="hover:bg-purple-50">
+  {/* Trigger Button */}
+  <div 
+    onClick={handleReportToggle}
+    className='flex items-center gap-1 hover:text-purple-700 cursor-pointer'
+  > 
+    <span className="font-montserrat">Events and Reports</span>
+    <FaChevronDown className={`h-3 mt-1 transition-transform ${reportDropdownOpen ? 'rotate-180' : ''}`}/>
+  </div>
+      
+  {/* FULL WIDTH DROPDOWN */}
+  {reportDropdownOpen && (
+    <div className="fixed top-[90px] left-0 w-full h-[25vh] bg-white shadow-2xl border-t border-gray-100 z-50">
+      
+      {/* Centered Container matching your About Us style */}
+      <div className="max-w-7xl mx-auto h-full flex flex-col justify-center items-start px-20">
+        
+        <div className="flex flex-col space-y-4">
           <Link 
-          to="/reports" 
-          className="block p-3 text-gray-700" 
-          onClick={() => setReportDropdownOpen(false)}
-        >
-          Annual Reports
-        </Link>
-      </li>
-    </ul>
+            to="/latestevents" 
+            className="text-1xl font-bold text-gray-800 hover:text-purple-700 transition-colors"
+            onClick={() => setReportDropdownOpen(false)}
+          >
+            Latest Events
+          </Link>
+
+          <Link 
+            to="/reports" 
+            className="text-1xl font-bold text-gray-800 hover:text-purple-700 transition-colors"
+            onClick={() => setReportDropdownOpen(false)}
+          >
+            Annual Reports
+          </Link>
+        </div>
+        
+      </div>
+    </div>
   )}
-     </div>
+</div>
           
 
 

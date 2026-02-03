@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import { frame } from 'motion'
 import WhatWeDo1 from '../assets/Task1.png'
 import WhatWeDo2 from '../assets/Task2.png'
 import WhatWeDo3 from '../assets/Task3.png'
 import { useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const WhatWeDo = () => {
 
@@ -37,6 +37,14 @@ const WhatWeDo = () => {
         <div>
           {/* TASK1 */}
           <div className="overflow-x-hidden">
+
+            <motion.div 
+  initial={{ opacity: 0, x: -100 }} // Starts off-screen to the left
+  whileInView={{ opacity: 1, x: 0 }} // Slides to its natural position
+  viewport={{ once: true, amount: 0.2 }} // Triggers when 20% visible
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  className='flex flex-col md:flex-row gap-8 items-center py-10 overflow-hidden'
+>
            <div className='grid grid-cols-2 gap-4 p-20'>
         
 
@@ -61,11 +69,20 @@ const WhatWeDo = () => {
                </div>
            </div>
 
-         
+       </motion.div>  
 
            {/* TASK2 */}
 
+           <motion.div 
+  initial={{ opacity: 0, x: 100 }} // Starts 100px to the right
+  whileInView={{ opacity: 1, x: 0 }} // Moves to center
+  viewport={{ once: true, amount: 0.2 }} // Triggers when 20% visible
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  
+>
            <div className='grid grid-cols-2 gap-6 p-20 bg-purple-700 text-white'>
+
+     
               <div>
                    <img src={WhatWeDo2} 
                    alt="Task2"
@@ -84,12 +101,21 @@ const WhatWeDo = () => {
                         hygiene items, and blankets directly to those in need. Furthermore, we actively seek opportunities to provide financial assistance for medical procedures or rehabilitation resources. 
                        By combining material aid with personalized advisory support, we are ensuring the well-being and successful reintegration of these special groups back into the community.</p>
                </div>
+       
+  
+           </div>    
 
-           
-           </div>
+               </motion.div>     
+              {/* TASK3 */}
 
-           {/* TASK3 */}
 
+            <motion.div 
+  initial={{ opacity: 0, x: -100 }} // Starts off-screen to the left
+  whileInView={{ opacity: 1, x: 0 }} // Slides to its natural position
+  viewport={{ once: true, amount: 0.2 }} // Triggers when 20% visible
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  className='flex flex-col md:flex-row gap-8 items-center py-10 overflow-hidden'
+>
            <div className='grid grid-cols-2 gap-4 p-20'>
                <div >
                     <h1 id='Rapid' className='scroll-mt-24 transition-all duration-700 font-Montserrat text-black-500 text-2xl font-semibold pb-3 pt-2'>Rapid Crisis Response.</h1>
@@ -108,6 +134,8 @@ const WhatWeDo = () => {
                    className='rounded-lg h-[30rem]' />
                </div>
            </div>
+
+           </motion.div>
 
 </div>
            <div className='bg-customPink p-10 '>
