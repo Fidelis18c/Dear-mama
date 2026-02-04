@@ -34,7 +34,7 @@ const HeroSection = () => {
   const navigate = useNavigate();
 
   const handleWhoWeAreClick = () => {
-    navigate('/aboutus');
+    navigate('/whoweare');
   }
 
  const goToImport = (id) => {
@@ -52,22 +52,7 @@ const HeroSection = () => {
      {/* Hero Section */}
       <div className='relative h-[34rem]'>
           
-        {/* <img 
-          src={HeroImage1} 
-          alt="HeroBackground" 
-          className='absolute inset-0 w-full h-full object-cover' 
-        /> */}
-
-        {/* {images.map((img, index) => (
-        <img
-          key={index}
-          src={img}
-          alt={`Slide ${index}`}
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
-            index === currentIndex ? 'opacity-100' : 'opacity-0'
-          }`}
-        />
-      ))} */}
+        
              <div
         className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
         style={{
@@ -142,7 +127,7 @@ const HeroSection = () => {
                 nutrition, and mentorship.</p>
               </div>
 
-             <div className=' text-right pr-4 text-right border-2 rounded-full mt-[4rem] ml-[10rem] mr-[1rem] py-2 bg-purple-500 text-white hover:bg-purple-700'>
+             <div className=' text-right pr-4 border-2 rounded-full mt-[4rem] ml-[10rem] mr-[1rem] py-2 bg-purple-500 text-white hover:bg-purple-700'>
               <button onClick={() => goToImport('Empowering')} className=''>Read More</button>
               <FaArrowRight className='inline-block ml-2' />
              </div>

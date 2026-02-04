@@ -19,6 +19,7 @@ import Values from './components/Values.jsx';
 import Navbar from './components/Navbar.jsx';
 import LatestEvents from './components/LatestEvents.jsx';
 import Reports from './components/Reports.jsx';
+import WhoWeAre from './components/WhoWeAre.jsx';
 
 
 const router = createBrowserRouter(
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
       <Route path="/leadership" element={<Leadership />} />
       <Route path="/values" element={<Values />} />
       <Route path="/latestevents" element={<LatestEvents />} />
+      <Route path="/whoweare" element={<WhoWeAre />} />  
     </Route>
   )
 );

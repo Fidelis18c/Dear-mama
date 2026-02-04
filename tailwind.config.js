@@ -14,6 +14,7 @@ export default {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
         opensans: ['Open Sans', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif'],
       },
       animation: {
         marquee: 'slide-in-out 15s linear infinite',
