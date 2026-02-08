@@ -20,7 +20,7 @@ import Navbar from './components/Navbar.jsx';
 import LatestEvents from './components/LatestEvents.jsx';
 import Reports from './components/Reports.jsx';
 import WhoWeAre from './components/WhoWeAre.jsx';
-
+import GetInvolved from './components/GetInvolved.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -35,6 +35,7 @@ const router = createBrowserRouter(
       <Route path="/values" element={<Values />} />
       <Route path="/latestevents" element={<LatestEvents />} />
       <Route path="/whoweare" element={<WhoWeAre />} />  
+      <Route path="/getinvolved" element={<GetInvolved />} />
     </Route>
   )
 );

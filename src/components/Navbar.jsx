@@ -7,6 +7,8 @@ import { FaChevronDown} from 'react-Icons/fa'
 
 
 const Navbar = () => {
+
+  
    
   const [ AboutusDropdownOpen, setAboutusDropdownOpen ] = useState(false);
   const [reportDropdownOpen, setReportDropdownOpen] = useState(false);
@@ -20,6 +22,7 @@ const Navbar = () => {
   setReportDropdownOpen(!reportDropdownOpen);
   setAboutUsDropdownOpen(false); // Close the other dropdown if it's open
  };
+
 
   return (
     <>
@@ -130,8 +133,10 @@ const Navbar = () => {
 
 
         <div> <Link to="/contact" className='hover:text-purple-700'>Contact Us</Link></div>
+
         </div>
-         <div className="pl-10 "><Link to="/getinvolved" className='border-2 rounded-full px-4 py-2 bg-purple-500 text-white hover:bg-purple-700'>Get Involved</Link></div>
+         <div className="pl-10 ">
+          <Link to="/getinvolved" className='border-2 rounded-full px-4 py-2 bg-purple-500 text-white hover:bg-purple-700'>Get Involved</Link></div>
       </div>
 
 

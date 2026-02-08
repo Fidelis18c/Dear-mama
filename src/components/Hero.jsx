@@ -95,7 +95,7 @@ const HeroSection = () => {
       {/* CORE IMPACT SECTION */}
 
 
-      <div className='py-5  text-black '>
+      <div className='py-5  text-black  bg-customPink '>
         <div className='mb-10 pt-5'>
             <div className=''>
                 <h1 className='text-center font-opensans font-bold mb-4 '>OUR CORE IMPACT</h1>
@@ -197,20 +197,21 @@ const HeroSection = () => {
       </div>
 
 {/* SLOGAN SECTION */}
+<div className='w-full overflow-hidden'>
   <motion.div
-  className="pt-5 pb-5"
+  className="pt-5 pb-5  bg-customPink"
   animate={{ x: [-50, 50, -50] }}
   transition={{
     duration: 6,
     repeat: Infinity,
     ease: "easeInOut",
   }}
->
-  <h2 className="text-center text-2xl font-montserrat">
+>  
+  <h2 className="  text-center text-2xl font-montserrat">
     From Our Hands To Their Hearts
   </h2>
 </motion.div>
-      
+     </div> 
     </>
   );
 };

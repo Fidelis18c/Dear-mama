@@ -1,6 +1,8 @@
 import React from 'react'
 import WHOimage from '../assets/WHO.png';
 import Task2image from '../assets/Task2.png';
+import ChildrensImage from '../assets/Childrens.png';
+import PrisonersImage from '../assets/Prisoners.png';   
 import Mission from './Mission.jsx';
 import Values from './Values.jsx';
 import { motion } from 'framer-motion';
@@ -25,8 +27,8 @@ const WhoWeAre = () => {
             </div>
         </div>
 
-        <div className='pb-5 pt-5 '>
-            <h1 className='text-center text-3xl font-semibold'>Who We Are Today?</h1>
+        <div className='pb-5 pt-5  bg-customPink '>
+            <h1 className='text-center text-3xl '>Who We Are Today?</h1>
         </div>
 
 
@@ -59,9 +61,78 @@ const WhoWeAre = () => {
         <Mission />
       </div>
 
-    <div>
+    <div >
         <Values />
     </div>
+
+    <div className=' bg-customPink p-5 '>
+      <h1 className=' text-center text-3xl p-5 '>Who We Serve</h1>
+    </div>
+
+     <div className=' grid grid-cols-2 justify-center items-center bg-customPink pb-10'>
+
+      <div className='mr-[-15rem] pl-10 grid grid-rows-2 justify-center items-center max-w-5xl -space-y-8 '>
+
+    <motion.div 
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ scale: 1.02 }}
+      viewport={{ once: true, amount: 0.2 }}   
+    >
+      <div>
+        <img src={ChildrensImage} 
+        alt="Childrens" 
+        className='w-[20rem] h-[20rem] object-cover  rounded-full shadow-xl z-10 overflow-hidden border-4 border-whit'
+        />
+      
+      </div>
+</motion.div>
+
+<motion.div 
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ scale: 1.02 }}
+      viewport={{ once: true, amount: 0.2 }}   
+    >
+      <div>
+        <img src={Task2image}
+        alt="Patients"
+        className='w-[20rem] h-[20rem] object-cover rounded-full shadow-xl border-4 border-whit' />
+  
+      </div>
+ </motion.div>
+
+
+     </div>
+<motion.div 
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ scale: 1.02 }}
+      viewport={{ once: true, amount: 0.2 }}   
+    >
+      <div className='ml-[-5rem]'>
+        <img src={PrisonersImage} 
+        alt="Prisoners"
+        className='w-[30rem]  h-[30rem] object-cover rounded-full shadow-xl border-4 border-whit'/>
+        
+      </div> 
+
+    </motion.div>
+
+     </div> 
+
+<div className=' w-full overflow-hidden'>
+<motion.div
+  className="pt-5 pb-5  bg-customPink"
+  animate={{ x: [-50, 50, -50] }}
+  transition={{
+    duration: 6,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
+  <div>
+    <h1 className='text-center text-2xl '>From Our Hands to Their Hearts</h1>
+  </div>
+  </motion.div>
+  </div>
     </>
   )
 }

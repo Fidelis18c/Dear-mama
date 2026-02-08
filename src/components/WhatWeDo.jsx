@@ -139,7 +139,7 @@ const WhatWeDo = () => {
 
 </div>
            <div className='bg-customPink p-10 '>
-               <h1 className=' text-center font-Montserrat text-2xl text-xs pb-3'>From Our Hands to Their Hearts</h1>
+               <h1 className=' text-center font-Montserrat text-2xl  pb-3'>From Our Hands to Their Hearts</h1>
            </div>
 
         </div>
