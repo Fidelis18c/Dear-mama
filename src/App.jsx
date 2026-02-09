@@ -22,6 +22,7 @@ import Reports from './components/Reports.jsx';
 import WhoWeAre from './components/WhoWeAre.jsx';
 import GetInvolved from './components/GetInvolved.jsx';
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />}>
@@ -36,6 +37,7 @@ const router = createBrowserRouter(
       <Route path="/latestevents" element={<LatestEvents />} />
       <Route path="/whoweare" element={<WhoWeAre />} />  
       <Route path="/getinvolved" element={<GetInvolved />} />
+
     </Route>
   )
 );

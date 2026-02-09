@@ -50,10 +50,10 @@ const HeroSection = () => {
   return (
     <>
      {/* Hero Section */}
-      <div className='relative h-[34rem]'>
+      <div className='relative h-[34rem] overflow-hidden'>
           
         
-             <div
+      <div
         className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
         style={{
           transform: `translateX(-${currentIndex * 100}%)`,
@@ -64,7 +64,7 @@ const HeroSection = () => {
             key={index}
             src={img}
             alt={`Slide ${index}`}
-            className="w-full h-full object-cover flex-shrink-0"
+            className="w-full h-full object-cover flex-shrink-0 "
           />
         ))}
       </div>
@@ -118,7 +118,7 @@ const HeroSection = () => {
               <div>
                 <img src={ImpactOneImage} 
                   alt=" Impact One"
-                  className='w-[20rem] h-[200px]' /> 
+                  className='w-[20rem] h-[200px] object-cover overflow-x-hidden overflow-y-hidden'  /> 
                </div>
               <div>
                <h2 className='text-black font-bold text-center font-montserrat pt-2'>Empowering future <br />generation.</h2>
@@ -147,7 +147,7 @@ const HeroSection = () => {
             <div>
               <img src={ImpactTwoImage} 
                alt=" Impact One"
-               className='w-[20rem] h-[200px]' /> 
+               className='w-[20rem] h-[200px] overflow-x-hidden overflow-y-hidden' /> 
             </div>
              <div>
                <h2 className='text-black font-bold text-center font-montserrat pt-2'>Holistic Community <br /> Well-being.</h2>
@@ -176,7 +176,7 @@ const HeroSection = () => {
           <div>
              <img src={ImpactThreeImage} 
              alt=" Impact One"
-             className='w-[20rem] h-[200px]' /> 
+             className='w-[20rem] h-[200px] overflow-x-hidden overflow-y-hidden' /> 
           </div>
            <div>
              <h2 className='text-black font-bold text-center font-montserrat pt-3'>Rapid Crisis Response</h2>

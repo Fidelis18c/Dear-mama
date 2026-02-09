@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import WHOimage from '../assets/WHO.png';
+import { Link } from 'react-router-dom';
+import Donate from './Donate';
+
+
+
+
 
 const GetInvolved = () => {
 
+ const [IsOpen, setIsOpen] = useState(false);
+
   return (
+
     <>
        <div className='relative'>
                   <img src={WHOimage}
@@ -14,19 +23,19 @@ const GetInvolved = () => {
                       <h1 className='text-5xl   text-center'>From Your Hands, To Their Hearts.</h1>
                   </div>
       
-              </div>
+         </div>
 
-     <div className="pt-10">
-        <h1 className='text-center font-semibold text-colorPurple text-5xl p-5'>Get Involved</h1>
-     </div>
+        <div className="pt-10">
+           <h1 className='text-center font-semibold text-colorPurple text-5xl p-5'>Get Involved</h1>
+        </div>
 
-<div className='flex items-center justify-center pb-10'>
-     <button className='text-center border-2 rounded-full px-4 py-2 bg-purple-500 text-white hover:bg-purple-700'>Donate Here</button>
-   
-</div>
+      <div className='flex items-center justify-center pb-10'>
+           <button onClick={() => setIsOpen(true)} className='text-center border-2 rounded-full px-4 py-2 bg-purple-500 text-white hover:bg-purple-700'>Donate Here</button>
+      </div>
 
-
+      <Donate IsOpen={IsOpen} setIsOpen={setIsOpen} />
               
+        
     </>
   )
 }

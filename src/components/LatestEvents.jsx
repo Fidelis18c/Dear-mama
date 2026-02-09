@@ -20,7 +20,7 @@ const LatestEvents = () => {
                 <div>
                   <img src={ReportImage} 
                   alt="Report Image"
-                  className='w-[25rem] h-[18rem] pb-3  ' />
+                  className='w-[15rem] h-[10rem] pb-3 object-cover overflow-x-hidden overflow-y-hidden' />
                 </div>
                 <div className='pt-3'>
                     <h2 className='pb-4 pl-3  bg-purple-700 text-white text-center font-semibold rounded-md ml-5 mr-5'>Visiting Patients at <br /> Hospital</h2>
@@ -38,7 +38,7 @@ const LatestEvents = () => {
                 <div>
                   <img src={ReportImage} 
                   alt="Report Image"
-                  className='w-[25rem] h-[18rem] pb-3  ' />
+                  className='w-[15rem] h-[10rem] pb-3 object-cover overflow-x-hidden overflow-y-hidden  ' />
                 </div>
                 <div className='pt-3'>
                     <h2 className='pb-4 pl-3  bg-purple-700 text-white text-center font-semibold rounded-md ml-5 mr-5'>Visiting  Chiildrens</h2>
@@ -47,7 +47,6 @@ const LatestEvents = () => {
       
                 <div className='pt-5 pl-4'>
                    <p>29/09/2025</p>
-                    <p>St joseh Childrens Centre</p>
                 </div>
       
              </div>
