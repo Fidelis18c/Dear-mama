@@ -1,11 +1,69 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-
 import DearMama from "../assets/DearMama.png";
 import MixxImage from "../assets/MIXXBYYAS.png";
+import { useState } from 'react';
+import { API_BASE_URL } from "../api/config";
 
 const Donate = ({ IsOpen, setIsOpen }) => {
+    const [phone, setPhone] = useState("");
+    const [amount, setAmount] = useState("");
+    const [loading, setLoading] = useState(false);
+
+
+    const checkStatus = (tx_ref) => {
+  const interval = setInterval(async () => {
+    const response = await fetch(`${API_BASE_URL}/payment/status/${tx_ref}`);
+    const result = await response.json();
+
+    if (result.data.status === 'SUCCESSFUL') {
+      clearInterval(interval);
+      alert("Thank you for your donation!");
+      setIsOpen(false); // Close the modal
+    } else if (result.data.status === 'FAILED') {
+      clearInterval(interval);
+      alert("Transaction failed or was cancelled.");
+    }
+  }, 5000); // Check every 5 seconds
+};
+
+
+  const handleDonate = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+
+  try {
+    const response = await fetch(`${API_BASE_URL}/payment/initiate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        amount: amount, // from your state
+        phone: phone,   // from your state
+        name: "Donor",  // Zenopay needs this
+        email: "donor@mail.com" // Zenopay needs this
+      }),
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      // 1. Tell the user to check their phone
+      alert("Please check your phone for the M-Pesa/TigoPesa prompt!");
+      
+      // 2. Start checking the status every 5 seconds
+      checkStatus(result.data.reference);
+    }
+  } catch (error) {
+    alert("Payment failed to start.");
+  } finally {
+    setLoading(false);
+  }
+
+};
+
+
   return (
     <AnimatePresence>
       {IsOpen && (
@@ -64,14 +122,14 @@ const Donate = ({ IsOpen, setIsOpen }) => {
                   </h2>
                 </div>
 
-                <p className="mt-3 text-center max-w-xl">
+                <p className=" text-center max-w-xl">
                   When you donate you are giving more than a gift, you are giving
                   hope, strength, and a reason to smile.
                 </p>
               </div>
 
               {/* Payment */}
-              <div className="flex flex-col items-center justify-center mt-2">
+              <div className="flex flex-col items-center justify-center ">
                 <img
                   src={MixxImage}
                   alt="Mixx By YAS"
@@ -81,8 +139,19 @@ const Donate = ({ IsOpen, setIsOpen }) => {
               </div>
 
               {/* Form */}
-              <form className="flex flex-col items-center justify-center mt-2">
+              <form onSubmit={handleDonate} className="flex flex-col items-center justify-center ">
                 <div className="w-full max-w-md">
+                  <label className="block text-sm font-semibold mb-1">
+                    Phone 
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="255694007665"
+                    className="w-full p-3 border-2 rounded-xl outline-none focus:ring-2 focus:ring-purple-500"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                  />
+
                   <label className="block text-sm font-semibold mb-1">
                     Amount
                   </label>
@@ -90,14 +159,18 @@ const Donate = ({ IsOpen, setIsOpen }) => {
                     type="text"
                     placeholder="TSh 10,000"
                     className="w-full p-3 border-2 rounded-xl outline-none focus:ring-2 focus:ring-purple-500"
+                    value={amount}
+                    onChange={(e) => setAmount(e.target.value)}
                   />
                 </div>
+                
 
                 <button
-                  type="button"
+                  type = "submit"
+                  disabled ={loading}
                   className="w-full max-w-md bg-purple-500 hover:bg-purple-700 text-white font-bold py-4 rounded-xl transition-colors shadow-lg mt-4 mb-2"
                 >
-                  Donate via Mobile Money
+                 {loading ? "Starting payment..." : "Donate via Mobile Money"}
                 </button>
               </form>
             </div>
