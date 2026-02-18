@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import DearMama from '../assets/DearMama.png'
-import { FaChevronDown} from 'react-Icons/fa'
+import { FaChevronDown} from 'react-icons/fa'
 
 
 

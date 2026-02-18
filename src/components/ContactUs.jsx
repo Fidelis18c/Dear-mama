@@ -12,7 +12,7 @@ const ContactUs = () => {
     const [loading, setLoading] = useState(false);
 
     const handleSubmit = async (e) => {
-      const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
     e.preventDefault();
     setLoading(true);
 
