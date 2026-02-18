@@ -1,17 +1,18 @@
 import React from 'react'
 import contactImage from '../assets/Contact1.png'
-import { API_BASE_URL } from '../api/config';
+
 import { useState } from 'react'
 
 
 const ContactUs = () => {
 
- 
+
 
     const [formData, setFormData] = useState({ name: '', email: '', message: ''});
     const [loading, setLoading] = useState(false);
 
     const handleSubmit = async (e) => {
+      const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
     e.preventDefault();
     setLoading(true);
 

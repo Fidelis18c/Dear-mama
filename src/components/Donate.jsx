@@ -4,9 +4,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import DearMama from "../assets/DearMama.png";
 import MixxImage from "../assets/MIXXBYYAS.png";
 import { useState } from 'react';
-import { API_BASE_URL } from "../api/config";
+
 
 const Donate = ({ IsOpen, setIsOpen }) => {
+
+
+
     const [phone, setPhone] = useState("");
     const [amount, setAmount] = useState("");
     const [loading, setLoading] = useState(false);
@@ -30,6 +33,7 @@ const Donate = ({ IsOpen, setIsOpen }) => {
 
 
   const handleDonate = async (e) => {
+    const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
     e.preventDefault();
     setLoading(true);
 
