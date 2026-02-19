@@ -1,6 +1,7 @@
 import React from 'react'
 import ReportImage from '../assets/Report1.png'
 import ReportImage2 from '../assets/Report2.png'
+import HeroImage5 from '../assets/Hero5.jpeg';
 
 const LatestEvents = () => {
   return (
@@ -55,9 +56,9 @@ const LatestEvents = () => {
          </div>
       
            <div>
-              <img src={ReportImage2}
+              <img src={HeroImage5}
                alt="Report Image 2" 
-               className='w-full h-[50rem]'/>
+               className='w-full h-[40rem] '/>
              </div>
     </>
   )

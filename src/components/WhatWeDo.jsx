@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react'
+import HospitalImage from '../assets/Hospital.jpeg';
 import WhatWeDo1 from '../assets/Task1.png'
 import WhatWeDo2 from '../assets/Task2.png'
 import WhatWeDo3 from '../assets/Task3.png'
+import womanImage11 from '../assets/Women11.jpeg';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -45,7 +47,7 @@ const WhatWeDo = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   className='flex flex-col md:flex-row gap-8 items-center py-10 overflow-hidden'
 >
-           <div className='grid grid-cols-2 gap-4 p-20'>
+           <div className='grid grid-cols-2 gap-4 p-10 pl-15 pr-5'>
         
 
                <div >
@@ -63,9 +65,9 @@ const WhatWeDo = () => {
                </div>
 
                <div>
-                   <img src={WhatWeDo1} 
+                   <img src={womanImage11} 
                    alt="Task1"
-                   className='rounded-lg' />
+                   className='rounded-lg h-[24rem] w-[35rem] ' />
                </div>
            </div>
 
@@ -80,13 +82,13 @@ const WhatWeDo = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   
 >
-           <div className='grid grid-cols-2 gap-6 p-20 bg-purple-700 text-white'>
+           <div className='grid grid-cols-2 gap-6 p-10 bg-purple-700 text-white'>
 
      
               <div>
-                   <img src={WhatWeDo2} 
+                   <img src={HospitalImage} 
                    alt="Task2"
-                   className='rounded-lg' />
+                   className='rounded-lg h-[23rem] w-[30rem] object-cover' />
                </div>
 
                <div >
@@ -116,7 +118,7 @@ const WhatWeDo = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   className='flex flex-col md:flex-row gap-8 items-center py-10 overflow-hidden'
 >
-           <div className='grid grid-cols-2 gap-4 p-20'>
+           <div className='grid grid-cols-2 gap-4 p-10'>
                <div >
                     <h1 id='Rapid' className='scroll-mt-24 transition-all duration-700 font-Montserrat text-black-500 text-2xl font-semibold pb-3 pt-2'>Rapid Crisis Response.</h1>
 
@@ -131,7 +133,7 @@ const WhatWeDo = () => {
                <div>
                    <img src={WhatWeDo3} 
                    alt="Task3"
-                   className='rounded-lg h-[30rem]' />
+                   className='rounded-lg h-[35rem]' />
                </div>
            </div>
 

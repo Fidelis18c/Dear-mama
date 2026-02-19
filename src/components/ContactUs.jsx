@@ -1,5 +1,6 @@
 import React from 'react'
 import contactImage from '../assets/Contact1.png'
+import HeroImage5 from '../assets/Hero5.jpeg';
 
 import { useState } from 'react'
 
@@ -42,7 +43,7 @@ const ContactUs = () => {
     <> 
     
       <div className=''>
-        <img src={contactImage} 
+        <img src={HeroImage5} 
         alt="Contact Us" 
         className='w-full h-[40rem]' />
       </div>

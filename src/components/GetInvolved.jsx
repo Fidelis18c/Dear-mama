@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import WHOimage from '../assets/WHO.png';
 import { Link } from 'react-router-dom';
 import Donate from './Donate';
-
+import HeroImage5 from '../assets/Hero5.jpeg';
 
 
 
@@ -15,7 +15,7 @@ const GetInvolved = () => {
 
     <>
        <div className='relative'>
-                  <img src={WHOimage}
+                  <img src={HeroImage5}
                   alt=""
                   className='w-full h-[34rem] object-cover flex-shrink-0' />
       

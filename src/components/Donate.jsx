@@ -2,8 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import DearMama from "../assets/DearMama.png";
+import airtelImage from "../assets/Airtel.png";
+import MpesaImage from "../assets/MPESA.jpeg";
+import HalopesaImage from "../assets/HALOPESA.png";
 import MixxImage from "../assets/MIXXBYYAS.png";
 import { useState } from 'react';
+
 
 
 const Donate = ({ IsOpen, setIsOpen }) => {
@@ -133,13 +137,28 @@ const Donate = ({ IsOpen, setIsOpen }) => {
               </div>
 
               {/* Payment */}
-              <div className="flex flex-col items-center justify-center ">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-0">
                 <img
                   src={MixxImage}
                   alt="Mixx By YAS"
-                  className="w-40 h-40 object-contain"
+                  className="w-[5rem] h-[5.5rem] object-contain"
                 />
-                <h2 className="text-xl font-semibold">LIPA NAMBA 555555</h2>
+                {/* <h2 className="text-xl font-semibold">LIPA NAMBA 555555</h2> */}
+                <img
+                  src={ airtelImage}
+                  alt="Airtel Money"
+                  className="w-[5rem] h-[2rem] object-contain"
+                />
+                <img
+                  src={HalopesaImage}
+                  alt="HalopesaImage"
+                  className="w-[5rem] h-[2rem] object-contain"
+                />
+                <img
+                  src={MpesaImage}
+                  alt="M-Pesa"
+                 className="w-[5rem] h-[5rem] object-contain"
+                />
               </div>
 
               {/* Form */}
