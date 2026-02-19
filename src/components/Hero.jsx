@@ -4,6 +4,7 @@ import HeroImage1 from '../assets/Hero1.png';
 import HeroImage2 from '../assets/Hero2.png';
 import HeroImage3 from '../assets/Hero3.png';
 import HeroImage4 from '../assets/Hero4.png'; 
+import HeroImage5 from '../assets/Hero5.jpeg';
 import ImpactOneImage from '../assets/Impact1.png';
 import ImpactTwoImage from '../assets/Impact2.png';
 import ImpactThreeImage from '../assets/Impact3.png';
@@ -17,7 +18,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
 
-  const images = [HeroImage1, HeroImage2, HeroImage3, HeroImage4];
+  const images = [HeroImage5, HeroImage2, HeroImage3, HeroImage4];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
