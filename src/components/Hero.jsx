@@ -5,6 +5,11 @@ import HeroImage2 from '../assets/Hero2.png';
 import HeroImage3 from '../assets/Hero3.png';
 import HeroImage4 from '../assets/Hero4.png'; 
 import HeroImage5 from '../assets/Hero5.jpeg';
+import HeroImage6 from '../assets/Hero6.jpeg';
+import HeroImage7 from '../assets/Hero7.jpeg';
+import HeroImage8 from '../assets/Hero8.jpeg';
+import HeroImage9 from '../assets/Hero9.jpeg';
+import HospitalImage from '../assets/Hospital.jpeg';
 import ImpactOneImage from '../assets/Impact1.png';
 import ImpactTwoImage from '../assets/Impact2.png';
 import ImpactThreeImage from '../assets/Impact3.png';
@@ -18,7 +23,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
 
-  const images = [HeroImage5, HeroImage2, HeroImage3, HeroImage4];
+  const images = [HeroImage5, HeroImage1, HeroImage7, HeroImage9];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -65,7 +70,7 @@ const HeroSection = () => {
             key={index}
             src={img}
             alt={`Slide ${index}`}
-            className="w-full h-full object-cover flex-shrink-0 "
+            className="w-full h-[full] object-cover flex-shrink-0 "
           />
         ))}
       </div>
@@ -117,7 +122,7 @@ const HeroSection = () => {
       
          <div className='max-w-xs bg-gray-100 rounded-xl overflow-hidden shadow-md ml-[4rem] pb-[2rem]'>
               <div>
-                <img src={ImpactOneImage} 
+                <img src={HeroImage8} 
                   alt=" Impact One"
                   className='w-[20rem] h-[200px] object-cover overflow-x-hidden overflow-y-hidden'  /> 
                </div>
@@ -146,7 +151,7 @@ const HeroSection = () => {
     >
          <div className='max-w-xs bg-gray-100 rounded-xl overflow-hidden shadow-md  pb-[2rem]'>
             <div>
-              <img src={ImpactTwoImage} 
+              <img src={HospitalImage} 
                alt=" Impact One"
                className='w-[20rem] h-[200px] overflow-x-hidden overflow-y-hidden' /> 
             </div>
