@@ -9,7 +9,7 @@ const Footer = () => {
     <div className='bg-purple-700 text-white pt-8 pb-5 pl-10'>
 
       <div className='relative'>
-      <div className='absolute right-0 top-0'>Contact Us</div>
+      <div className=''>Contact Us</div>
       </div>
 
     <div className='flex gap-2 '>
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>   
        </div>
 
-         <div className="">
+         <div className="mt-4">
            <h1 className='text-center items-center'>© 2026 DEAR MAMA FOUNDATION.</h1>
         </div>
 
