@@ -44,7 +44,7 @@ const History = () => {
              <div>
               <img src={OurHistoryImage}
                alt="OurHistoryImage"
-               className='w-full h-[40rem] '
+               className='w-full h-[50rem] '
                 />
              </div>
     </>

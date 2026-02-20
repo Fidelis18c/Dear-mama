@@ -2,13 +2,24 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import DearMama from '../assets/DearMama.png'
 import { FaChevronDown} from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa6'
+import { FaTimes } from 'react-icons/fa6'
 
 
 
 
 const Navbar = () => {
 
-  
+  // Humberger menu state
+  const [ismobileMenuOpen, setMobieMenuOpen] = useState(false);
+
+   const toggleMobileMenu = () => {
+    setMobileMenuOpen(!ismobileMenuOpen);
+  };
+
+
+  // Dropdown menu states
+
    
   const [ AboutusDropdownOpen, setAboutusDropdownOpen ] = useState(false);
   const [reportDropdownOpen, setReportDropdownOpen] = useState(false);
@@ -40,6 +51,11 @@ const Navbar = () => {
           <Link to="/"><b>DEAR MAMA</b>  FOUNDATION</Link>  
         </div>
       </div>
+
+  // HUMBURGER MENU BUTTON
+        <div className="md:hidden mr-5" onClick={toggleMobileMenu}>
+          {ismobileMenuOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
+        </div>
 
       <div className='flex items-center gap-7  font-opensans font-thin relative  '>
 
@@ -139,7 +155,16 @@ const Navbar = () => {
           <Link to="/getinvolved" className='border-2 rounded-full px-4 py-2 bg-purple-500 text-white hover:bg-purple-700'>Get Involved</Link></div>
       </div>
 
-
+{/* --- MOBILE MENU OVERLAY (Visible only when ismobileMenuOpen is true) --- */}
+      <div className={`${ismobileMenuOpen ? 'flex' : 'hidden'} md:hidden flex-col bg-white w-full p-5 shadow-lg border-t space-y-4 font-opensans`}>
+        <Link to="/history" onClick={() => setMobieMenuOpen(false)}>About Us - History</Link>
+        <Link to="/leadership" onClick={() => setMobieMenuOpen(false)}>About Us - Leadership</Link>
+        <Link to="/whatwedo" onClick={() => setMobieMenuOpen(false)}>What We Do</Link>
+        <Link to="/latestevents" onClick={() => setMobieMenuOpen(false)}>Latest Events</Link>
+        <Link to="/reports" onClick={() => setMobieMenuOpen(false)}>Annual Reports</Link>
+        <Link to="/contact" onClick={() => setMobieMenuOpen(false)}>Contact Us</Link>
+        <Link to="/getinvolved" className="bg-purple-500 text-white text-center py-2 rounded-lg" onClick={() => setMobieMenuOpen(false)}>Get Involved</Link>
+      </div>
    
       
     </>

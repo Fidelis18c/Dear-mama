@@ -58,7 +58,7 @@ const LatestEvents = () => {
            <div>
               <img src={HeroImage5}
                alt="Report Image 2" 
-               className='w-full h-[40rem] '/>
+               className='w-full h-[50rem] '/>
              </div>
     </>
   )
