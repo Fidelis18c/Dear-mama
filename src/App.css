@@ -3,14 +3,17 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-   overflow-x: hidden;
+  overflow-x: hidden;
+
 }
 
 
-body{
+html, body{
   background-color: #F9F2F2;
    overflow-x: hidden;
   overflow-y: hidden;
+
+
 }
 
 

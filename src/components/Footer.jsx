@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import DearMama from '../assets/DearMama.png'
+import DearMamaImage from '../assets/DearMama2.png'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa6'
 
 const Footer = () => {
