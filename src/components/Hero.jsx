@@ -59,11 +59,11 @@ const HeroSection = () => {
   return (
     <>
      {/* Hero Section */}
-      <div className='relative h-[34rem] overflow-hidden'>
+      <div className=' relative w-full h-[20rem] overflow-hidden Hidden md:flex md:relative md:h-[34rem] md:overflow-hidden'>
           
         
       <div
-        className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
+        className="absolute insert-0 flex Hidden md:absolute md:inset-0 md:flex transition-transform duration-1000 ease-in-out"
         style={{
           transform: `translateX(-${currentIndex * 100}%)`,
         }}
@@ -73,28 +73,28 @@ const HeroSection = () => {
             key={index}
             src={img}
             alt={`Slide ${index}`}
-            className="w-full h-[full] object-cover flex-shrink-0 scale-100"
+            className=" md:w-full  md:h-[full] md:object-cover md:flex-shrink-0 md:scale-100"
           />
         ))}
       </div>
         
-        <div className='absolute inset-0 flex items-center justify-start text-white'>
+        <div className='absolute text-white md:absolute md:inset-0 md:flex md:items-center md:justify-start md:text-white'>
             
         
-          <div className=' ml-3 md:ml-20 max-w-4xl mr-8'> 
+          <div className='max-w-4xl ml-4 md:ml-7 md:max-w-4xl md:mr-8'> 
               
           
-            <h1 className='font-montserrat font-extrabold text-2xl sm:text-6xl  leading-tight'>
+            <h1 className='absolute top-[3rem] text-2xl font-montserrat md:font-extrabold md:text-6xl  md:leading-tight'>
                 FROM OUR HANDS TO THEIR HEARTS.
             </h1>
 
             
-            <p className='text-xl sm:text-3xl font-semibold mt-4 mb-8'>
+            <p className='absolute top-[12rem] md:text-3xl font-semibold md:mt-8 md:mb-8'>
                 Giving help to those <br /> who needs it.
             </p>
 
   
-             <button className='inline-block border-2 border-white px-8 py-3 rounded-md text-lg transition duration-300 hover:bg-white hover:text-gray-800' onClick={handleWhoWeAreClick} >
+             <button className='md:absolute md:bottom-[9.5rem] md:inline-block md:border-2   md:border-white md:px-8 md:py-3 md:rounded-md md:text-lg transition duration-300 md:hover:bg-white md:hover:text-gray-800' onClick={handleWhoWeAreClick} >
                 Who we Are
             </button>
           </div>
