@@ -39,11 +39,11 @@ const Navbar = () => {
   return (
     <>
 
-    <div className='w-full flex items-center justify-between pb-2   bg-customPink overflow-hidden md:overflow-hidden'>
+    <div className='w-full flex items-center justify-between ml-3 bg-customPink overflow-hidden md:overflow-hidden'>
        <div className=' flex items-center gap-1 pt-4 pb-1  '>
         <Link to="/"> <img src={DearMamaImage} 
            alt="Dear Mama Foundation"
-           className='w-12 h-15 ml-4 md:hidden md:w-20 md:h-15 md:ml-8 md:mt-2' /></Link>
+           className='w-12 h-15 ml-4 md:w-20 md:h-15 md:ml-8 md:mt-2' /></Link>
       
 
         <div className='md:text-1xl md:font-opensans'>
@@ -187,7 +187,7 @@ const Navbar = () => {
         </div>
 
         <div className=" hidden md:flex  ">
-          <Link to="/getinvolved" className=' md:border-2 md:rounded-full md:px-3 md:py-2 md:bg-purple-500 md:text-white md:hover:bg-purple-700'>Get Involved</Link>
+          <Link to="/getinvolved" className='md:pl-[1rem]  md:border-2 md:rounded-full md:px-3 md:py-2 md:bg-purple-500 md:text-white md:hover:bg-purple-700'>Get Involved</Link>
         </div>
 
       </div>
