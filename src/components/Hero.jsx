@@ -81,20 +81,20 @@ const HeroSection = () => {
         <div className='absolute inset-0 flex items-center justify-start text-white'>
             
         
-          <div className=' ml-7 max-w-4xl mr-8'> 
+          <div className='ml-3 md:ml-7 md:max-w-4xl md:mr-8'> 
               
           
-            <h1 className='absolute top-[3rem] font-extrabold  font-montserrat text-6xl  leading-tight'>
+            <h1 className='absolute top-[2rem]  md:flex md:absolute md:top-[3rem] font-extrabold  font-montserrat md:text-6xl  leading-tight'>
                 FROM OUR HANDS TO THEIR HEARTS.
             </h1>
 
             
-            <p className=' text-3xl font-semibold  mb-8'>
+            <p className='absolute top-[5rem] md:flex  md:text-3xl md:absolute md:top-[12rem] font-semibold  md:mb-8'>
                 Giving help to those <br /> who needs it.
             </p>
 
   
-             <button className=' absolute bottom-[10rem] inline-block border-2   border-white px-8 py-3 rounded-md text-lg transition duration-300 hover:bg-white hover:text-gray-800' onClick={handleWhoWeAreClick} >
+             <button className=' absolute bottom-[8rem] px-2 py-2  md:absolute  md:bottom-[10rem] md:inline-block border-2   border-white  md:px-8 md:py-3 rounded-md text-lg transition duration-300 hover:bg-white hover:text-gray-800' onClick={handleWhoWeAreClick} >
                 Who we Are
             </button>
           </div>
