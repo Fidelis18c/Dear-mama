@@ -39,11 +39,11 @@ const Navbar = () => {
   return (
     <>
 
-    <div className='w-full flex items-center justify-between pb-1  bg-customPink overflow-hidden md:overflow-hidden'>
-       <div className=' flex items-center gap-1 pt-3 pb-1  '>
+    <div className='w-full flex items-center justify-between pb-2   bg-customPink overflow-hidden md:overflow-hidden'>
+       <div className=' flex items-center gap-1 pt-4 pb-1  '>
         <Link to="/"> <img src={DearMamaImage} 
            alt="Dear Mama Foundation"
-           className='w-12 h-15 md:w-20 md:h-15 md:ml-8 md:mt-2' /></Link>
+           className='w-12 h-15 ml-4 md:hidden md:w-20 md:h-15 md:ml-8 md:mt-2' /></Link>
       
 
         <div className='md:text-1xl md:font-opensans'>
@@ -55,12 +55,12 @@ const Navbar = () => {
      
      <div>
 
-      <div className='md:hidden' onClick={toggleMenu}>
+      <div className='pt-3 pl-2 md:hidden' onClick={toggleMenu}>
         {isMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
       </div>
 
       {isMenuOpen && (
-        <div className='absolute top-[4rem] left-0 w-full bg-white shadow-lg z-50 flex flex-col items-center gap-4 py-4'>
+        <div className='absolute top-[4rem] left-0 w-full bg-white shadow-lg z-50 flex flex-col items-center gap-4 py-5'>
           
           <div className='flex items-center justify-center pb-2 gap-1 w-full border-b-2 border-customPink onClick={handleAboutusToggle}  '>
              <Link to="/aboutus" className='hover:text-purple-700' onClick={toggleMenu}>ABOUT US</Link>

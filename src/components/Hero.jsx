@@ -73,28 +73,28 @@ const HeroSection = () => {
             key={index}
             src={img}
             alt={`Slide ${index}`}
-            className=" md:w-full  md:h-[full] md:object-cover md:flex-shrink-0 md:scale-100"
+            className=" brightness-50 md:w-full  md:h-[full] md:object-cover md:flex-shrink-0 md:scale-100 md:brightness-30"
           />
         ))}
       </div>
         
-        <div className='absolute text-white md:absolute md:inset-0 md:flex md:items-center md:justify-start md:text-white'>
+        <div className='absolute inset-0 flex items-center justify-start text-white'>
             
         
-          <div className='max-w-4xl ml-4 md:ml-7 md:max-w-4xl md:mr-8'> 
+          <div className=' ml-7 max-w-4xl mr-8'> 
               
           
-            <h1 className='absolute top-[3rem] text-2xl font-montserrat md:font-extrabold md:text-6xl  md:leading-tight'>
+            <h1 className='absolute top-[3rem] font-extrabold  font-montserrat text-6xl  leading-tight'>
                 FROM OUR HANDS TO THEIR HEARTS.
             </h1>
 
             
-            <p className='absolute top-[12rem] md:text-3xl font-semibold md:mt-8 md:mb-8'>
+            <p className=' text-3xl font-semibold  mb-8'>
                 Giving help to those <br /> who needs it.
             </p>
 
   
-             <button className='md:absolute md:bottom-[9.5rem] md:inline-block md:border-2   md:border-white md:px-8 md:py-3 md:rounded-md md:text-lg transition duration-300 md:hover:bg-white md:hover:text-gray-800' onClick={handleWhoWeAreClick} >
+             <button className=' absolute bottom-[10rem] inline-block border-2   border-white px-8 py-3 rounded-md text-lg transition duration-300 hover:bg-white hover:text-gray-800' onClick={handleWhoWeAreClick} >
                 Who we Are
             </button>
           </div>
@@ -112,7 +112,7 @@ const HeroSection = () => {
 
         {/* CARD1 */}
 
-    <div className='flex flex-col md:flex-row gap-10 justify-center items-center mt-10'>
+    <div className='  md:flex  md:flex-row md:gap-10 md:justify-center md:items-center md:mt-10'>
       
    <motion.div 
       initial={{ opacity: 0, y: 100 }}
@@ -123,11 +123,11 @@ const HeroSection = () => {
       
     >
       
-         <div className='max-w-xs bg-gray-100 rounded-xl overflow-hidden shadow-md ml-[4rem] pb-[2rem]'>
+         <div className='md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:ml-[4rem] md:pb-[2rem]'>
               <div>
                 <img src={HeroImage8} 
                   alt=" Impact One"
-                  className='w-[20rem] h-[250px] object-cover overflow-x-hidden overflow-y-hidden scale-100'  /> 
+                  className='md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden md:scale-100'  /> 
                </div>
               <div>
                <h2 className='text-black font-bold text-center font-montserrat pt-2'>Empowering future <br />generation.</h2>
@@ -152,11 +152,11 @@ const HeroSection = () => {
       transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
       
     >
-         <div className='max-w-xs bg-gray-100 rounded-xl overflow-hidden shadow-md  pb-[2rem]'>
+         <div className='md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
             <div>
               <img src={HospitalImage} 
                alt=" Impact One"
-               className='w-[20rem] h-[250px] overflow-x-hidden overflow-y-hidden' /> 
+               className='md:w-[20rem] md:h-[250px] md:overflow-x-hidden md:overflow-y-hidden' /> 
             </div>
              <div>
                <h2 className='text-black font-bold text-center font-montserrat pt-2'>Holistic Community <br /> Well-being.</h2>
@@ -164,7 +164,7 @@ const HeroSection = () => {
                the elderly, and prisoners. This includes providing basic necessities, financial assistance for treatment,
                and crucial advisory and emotional support to foster dignity and hope during difficult times.</p>
             </div>
-            <div className='text-right pr-4  text-right border-2 rounded-full mt-[3rem] ml-[10rem] mr-[1rem] py-2 bg-purple-500 text-white hover:bg-purple-700 '>
+            <div className='text-right pr-4  border-2 rounded-full mt-[3rem] ml-[10rem] mr-[1rem] py-2 bg-purple-500 text-white hover:bg-purple-700 '>
                <button onClick={() => goToImport('Well-being')} className=''>Read More</button>
                <FaArrowRight className='inline-block ml-2' />
            </div>
@@ -181,15 +181,15 @@ const HeroSection = () => {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-        <div className='max-w-xs bg-gray-100 rounded-xl overflow-hidden shadow-md mr-[4rem] pb-[2rem]'>
+        <div className='md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:mr-[4rem] md:pb-[2rem]'>
           <div>
              <img src={womanImage2} 
              alt=" Impact One"
-             className='w-[20rem] h-[250px] overflow-x-hidden overflow-y-hidden scale-100' /> 
+             className='md:w-[20rem] md:h-[250px] md:overflow-x-hidden md:overflow-y-hidden md:scale-100' /> 
           </div>
            <div>
              <h2 className='text-black font-bold text-center font-montserrat pt-3'>Rapid Crisis Response</h2>
-             <p className='max-w-xs text-black text-left text-left text-sm pt-6 pl-4 pr-2'>We mobilize swiftly to address unexpected community emergencies and natural disasters,
+             <p className='max-w-xs text-black text-left  text-sm pt-6 pl-4 pr-2'>We mobilize swiftly to address unexpected community emergencies and natural disasters,
              such as floods or severe food shortages. 
               Our youth network ensures immediate material aid and relief reaches affected communities rapidly when they need it most.</p>
            </div>
