@@ -40,10 +40,10 @@ const Navbar = () => {
     <>
 
     <div className='w-full flex items-center justify-between bg-customPink overflow-hidden md:overflow-hidden'>
-       <div className='flex items-center gap-1 pt-4 pb-3  '>
+       <div className='flex items-center gap-1 pt-4 pb-3 bg-no-repeat bg-cover bg-center '>
         <Link to="/"> <img src={DearMamaImage} 
            alt="Dear Mama Foundation"
-           className='w-12 h-15 ml-6 md:w-20 md:h-15 md:ml-8 md:mt-2' /></Link>
+           className='w-12 h-15 ml-6 object-cover object-center md:w-20 md:h-15 md:ml-8 md:mt-2' /></Link>
       
 
         <div className='md:text-1xl md:font-opensans'>
