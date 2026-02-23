@@ -81,7 +81,7 @@ const HeroSection = () => {
         <div className='absolute inset-0 flex items-center justify-start text-white'>
             
         
-          <div className='ml-3 md:ml-7 md:max-w-4xl md:mr-8'> 
+          <div className='ml-8 md:ml-7 md:max-w-4xl md:mr-8'> 
               
           
             <h1 className='absolute top-[2rem]  md:flex md:absolute md:top-[3rem] font-extrabold  font-montserrat md:text-6xl  leading-tight'>
