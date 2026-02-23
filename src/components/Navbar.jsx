@@ -55,7 +55,7 @@ const Navbar = () => {
      
      <div>
 
-      <div className='pt-3 pl-5 md:hidden' onClick={toggleMenu}>
+      <div className='pt-3 pl-7 md:hidden' onClick={toggleMenu}>
         {isMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
       </div>
 
