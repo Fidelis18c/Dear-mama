@@ -84,7 +84,7 @@ const HeroSection = () => {
           <div className='ml-8 md:ml-7 md:max-w-4xl md:mr-8'> 
               
           
-            <h1 className='absolute top-[2rem]  md:flex md:absolute md:top-[3rem] font-extrabold  font-montserrat md:text-6xl  leading-tight'>
+            <h1 className='absolute top-[2.5rem]  md:flex md:absolute md:top-[3rem] font-extrabold  font-montserrat md:text-6xl  leading-tight'>
                 FROM OUR HANDS TO THEIR HEARTS.
             </h1>
 

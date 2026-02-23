@@ -60,7 +60,7 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <div className='absolute top-[4rem] left-0 w-full bg-white shadow-lg z-50 flex flex-col items-center gap-4 py-5'>
+        <div className='absolute top-[3.5rem] left-0 w-full bg-white shadow-lg z-50 flex flex-col items-center gap-4 py-5'>
           
           <div className='flex items-center justify-center pb-2 gap-1 w-full border-b-2 border-customPink onClick={handleAboutusToggle}  '>
              <Link to="/aboutus" className='hover:text-purple-700' onClick={toggleMenu}>ABOUT US</Link>
