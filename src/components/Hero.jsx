@@ -59,11 +59,11 @@ const HeroSection = () => {
   return (
     <>
      {/* Hero Section */}
-      <div className=' relative w-full h-[20rem] overflow-hidden Hidden md:flex md:relative md:h-[34rem] md:overflow-hidden'>
+      <div className='relative w-full h-[20rem] overflow-hidden Hidden md:flex md:relative md:h-[34rem] md:overflow-hidden'>
           
         
-      <div
-        className="absolute insert-0 flex Hidden md:absolute md:inset-0 md:flex transition-transform duration-1000 ease-in-out"
+      {/* <div
+        className=" insert-0  md:absolute md:insert-0 md:flex transition-transform duration-1000 ease-in-out"
         style={{
           transform: `translateX(-${currentIndex * 100}%)`,
         }}
@@ -73,10 +73,31 @@ const HeroSection = () => {
             key={index}
             src={img}
             alt={`Slide ${index}`}
-            className=" brightness-50 md:w-full  md:h-[full] md:object-cover md:flex-shrink-0 md:scale-100 md:brightness-30"
+            className=" brightness-50 h-[20rem] object-cover object- md:w-full  md:h-[full] md:object-cover md:flex-shrink-0  md:scale-100 md:brightness-30"
           />
         ))}
-      </div>
+      </div> */}
+
+
+      <div className="relative w-full h-[20rem] overflow-hidden">
+
+  <div
+    className="flex transition-transform duration-1000 ease-in-out"
+    style={{
+      transform: `translateX(-${currentIndex * 100}%)`,
+    }}
+  >
+    {images.map((img, index) => (
+      <img
+        key={index}
+        src={img}
+        alt={`Slide ${index}`}
+        className="w-full h-[20rem] object-cover brightness-50 flex-shrink-0"
+      />
+    ))}
+  </div>
+
+</div>
         
         <div className='absolute inset-0 flex items-center justify-start text-white'>
             
