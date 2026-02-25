@@ -127,10 +127,10 @@ const HeroSection = () => {
               <div>
                 <img src={HeroImage8} 
                   alt=" Impact One"
-                  className='w-[22rem] h-[15rem] rounded-lg md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden md:scale-100'  /> 
+                  className='w-[25rem] h-[17rem] rounded-lg md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden md:scale-100'  /> 
                </div>
               <div>
-               <h2 className=' pt-1 text-sm md:text-[20px]  text-black font-bold  text-center font-montserrat md:text-wrap md:pt-2'>Empowering future <br />generation.</h2>
+               <h2 className=' pt-1 text-xl md:text-[20px]  text-black font-bold  text-center font-montserrat md:text-wrap md:pt-2'>Empowering future <br />generation.</h2>
                 <p className=' ml-[1rem] max-w-64 text-sm text-balance pl-3 text-center md:text-balance md:ml-[1rem] md:max-w-xs md:text-black md:text-left md:text-sm md:pt-5 md:pl-6 md:pr-1'>We ensure orphans and children from
                 impoverished backgrounds receive vital support, focusing on access to education, 
                 nutrition, and mentorship.</p>
@@ -156,10 +156,10 @@ const HeroSection = () => {
             <div>
               <img src={HospitalImage} 
                alt=" Impact One"
-               className='w-[22rem] h-[17rem] rounded-lg md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden' /> 
+               className='w-[25rem] h-[17rem] rounded-lg md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden' /> 
             </div>
              <div>
-               <h2 className='pt-1 text-sm md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Holistic Community <br /> Well-being.</h2>
+               <h2 className='pt-1 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Holistic Community <br /> Well-being.</h2>
                 <p className='max-w-xs pt-2 text-black md:text-balance text-left text-sm md:pt-2 pl-4 pr-2 '>Our volunteers provide 100% support to patients in hospitals, 
                the elderly, and prisoners. This includes providing basic necessities, financial assistance for treatment,
                and crucial advisory and emotional support to foster dignity and hope during difficult times.</p>
@@ -185,10 +185,10 @@ const HeroSection = () => {
           <div>
              <img src={womanImage2} 
              alt=" Impact One"
-             className='w-[22rem] h-[18rem] md:w-[20rem] md:h-[250px] md:overflow-x-hidden  md:object-cover md:overflow-y-hidden md:scale-100' /> 
+             className='w-[25rem] h-[20rem] md:w-[20rem] md:h-[250px] md:overflow-x-hidden  md:object-cover md:overflow-y-hidden md:scale-100' /> 
           </div>
            <div>
-             <h2 className='pt-1 text-sm md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Rapid Crisis Response</h2>
+             <h2 className='pt-1 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Rapid Crisis Response</h2>
              <p className='max-w-xs pt-2 text-black text-left md:text-balance  text-sm md:pt-3 pl-6 pr-2'>We mobilize swiftly to address unexpected community emergencies and natural disasters,
              such as floods or severe food shortages. 
               Our youth network ensures immediate material aid and relief reaches affected communities rapidly when they need it most.</p>
