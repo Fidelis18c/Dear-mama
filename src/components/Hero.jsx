@@ -104,15 +104,15 @@ const HeroSection = () => {
       {/* CORE IMPACT SECTION */}
 
 
-      <div className='py-5  text-black  bg-customPink '>
-        <div className='mb-10 pt-5'>
+      <div className='md:py-5  text-black  bg-customPink '>
+        <div className='pt-[2rem] pb-[2rem] md:mb-10 md:pt-5'>
             <div className=''>
-                <h1 className='text-center font-opensans font-bold mb-4 '>OUR CORE IMPACT</h1>
+                <h1 className=' mb-5 text-center font-opensans font-bold md:mb-4 '>OUR CORE IMPACT</h1>
              </div>
 
         {/* CARD1 */}
 
-    <div className='  md:flex  md:flex-row md:gap-10 md:justify-center md:items-center md:mt-10'>
+    <div className=' flex flex-col  md:flex  md:flex-row md:gap-10 md:justify-center md:items-center md:mt-10'>
       
    <motion.div 
       initial={{ opacity: 0, y: 100 }}
@@ -123,22 +123,22 @@ const HeroSection = () => {
       
     >
       
-         <div className='md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:ml-[4rem] md:pb-[2rem]'>
+         <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-4 mr-3 mb-10 bg-gray-200  md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:ml-[4rem] md:pb-[2rem]'>
               <div>
                 <img src={HeroImage8} 
                   alt=" Impact One"
-                  className='md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden md:scale-100'  /> 
+                  className='w-[18rem] h-[13rem] rounded-lg md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden md:scale-100'  /> 
                </div>
               <div>
-               <h2 className='text-black font-bold text-center font-montserrat pt-2'>Empowering future <br />generation.</h2>
-                <p className='max-w-xs text-black text-left text-sm pt-6 pl-6 pr-1'>We ensure orphans and children from
+               <h2 className=' pt-1 text-sm md:text-[17px]  text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Empowering future <br />generation.</h2>
+                <p className=' ml-[1rem] max-w-64 text-sm text-balance pl-3 text-center md:text-balance md:ml-[1rem] md:max-w-xs md:text-black md:text-left md:text-sm md:pt-5 md:pl-6 md:pr-1'>We ensure orphans and children from
                 impoverished backgrounds receive vital support, focusing on access to education, 
                 nutrition, and mentorship.</p>
               </div>
 
-             <div className=' text-right pr-4 border-2 rounded-full mt-[4rem] ml-[10rem] mr-[1rem] py-2 bg-purple-500 text-white hover:bg-purple-700'>
+             <div className='  mt-[2rem] ml-[8rem]    text-xs mr-[1rem]  py-2 px-3  md:text-right md:pr-4 rounded-full md:mt-[3rem] md:ml-[10rem] md:mr-[1rem] md:py-2 bg-purple-500 text-white  md:hover:bg-purple-700'>
               <button onClick={() => goToImport('Empowering')} className=''>Read More</button>
-              <FaArrowRight className='inline-block ml-2' />
+              <FaArrowRight className='inline-block ml-1' />
              </div>
            </div>
         </motion.div>
@@ -152,21 +152,21 @@ const HeroSection = () => {
       transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
       
     >
-         <div className='md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
+         <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-4 mr-3 mb-10 bg-gray-200  md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
             <div>
               <img src={HospitalImage} 
                alt=" Impact One"
-               className='md:w-[20rem] md:h-[250px] md:overflow-x-hidden md:overflow-y-hidden' /> 
+               className='w-[18rem] h-[13rem] rounded-lg md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden' /> 
             </div>
              <div>
-               <h2 className='text-black font-bold text-center font-montserrat pt-2'>Holistic Community <br /> Well-being.</h2>
-                <p className='max-w-xs text-black text-left text-sm pl-4 pr-2 '>Our volunteers provide 100% support to patients in hospitals, 
+               <h2 className='pt-1 text-sm md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Holistic Community <br /> Well-being.</h2>
+                <p className='max-w-xs pt-2 text-black md:text-balance text-left text-sm md:pt-2 pl-4 pr-2 '>Our volunteers provide 100% support to patients in hospitals, 
                the elderly, and prisoners. This includes providing basic necessities, financial assistance for treatment,
                and crucial advisory and emotional support to foster dignity and hope during difficult times.</p>
             </div>
-            <div className='text-right pr-4  border-2 rounded-full mt-[3rem] ml-[10rem] mr-[1rem] py-2 bg-purple-500 text-white hover:bg-purple-700 '>
+            <div className='ml-[8rem] text-right pr-4  border-2 rounded-full mt-[3rem] px-3  py-2 text-xs md:text-right md:pr-4 md:mr-[1rem] md:ml-[10rem] md:mt-[2rem] bg-purple-500 text-white hover:bg-purple-700 '>
                <button onClick={() => goToImport('Well-being')} className=''>Read More</button>
-               <FaArrowRight className='inline-block ml-2' />
+               <FaArrowRight className='inline-block ml-1' />
            </div>
         </div>
   </motion.div>
@@ -181,19 +181,19 @@ const HeroSection = () => {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-        <div className='md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:mr-[4rem] md:pb-[2rem]'>
+        <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-4 mr-3 mb-5  bg-gray-200 md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:mr-[4rem] md:pb-[2rem]'>
           <div>
              <img src={womanImage2} 
              alt=" Impact One"
-             className='md:w-[20rem] md:h-[250px] md:overflow-x-hidden md:overflow-y-hidden md:scale-100' /> 
+             className='w-[18rem] h-[18rem] md:w-[20rem] md:h-[250px] md:overflow-x-hidden  md:object-cover md:overflow-y-hidden md:scale-100' /> 
           </div>
            <div>
-             <h2 className='text-black font-bold text-center font-montserrat pt-3'>Rapid Crisis Response</h2>
-             <p className='max-w-xs text-black text-left  text-sm pt-6 pl-4 pr-2'>We mobilize swiftly to address unexpected community emergencies and natural disasters,
+             <h2 className='pt-1 text-sm md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Rapid Crisis Response</h2>
+             <p className='max-w-xs pt-2 text-black text-left md:text-balance  text-sm md:pt-3 pl-6 pr-2'>We mobilize swiftly to address unexpected community emergencies and natural disasters,
              such as floods or severe food shortages. 
               Our youth network ensures immediate material aid and relief reaches affected communities rapidly when they need it most.</p>
            </div>
-          <div className=' text-right pr-4 border-2 rounded-full mt-[3rem] ml-[10rem] mr-[1rem] py-2 bg-purple-500 text-white hover:bg-purple-700 '>
+          <div className=' ml-[8rem] text-right  px-3  py-2 text-xs  pr-4 border-2 rounded-full mt-[3rem] md:ml-[10rem] mr-[1rem]  bg-purple-500 text-white hover:bg-purple-700 '>
             <button onClick={() => goToImport('Rapid')} className=''>Read More</button>
             <FaArrowRight className='inline-block ml-2' />
           </div>
@@ -208,7 +208,7 @@ const HeroSection = () => {
 {/* SLOGAN SECTION */}
 <div className='w-full overflow-hidden'>
   <motion.div
-  className="pt-5 pb-5  bg-customPink"
+  className="pb-6 md:pt-3 md:pb-5  bg-customPink"
   animate={{ x: [-50, 50, -50] }}
   transition={{
     duration: 6,
@@ -216,7 +216,7 @@ const HeroSection = () => {
     ease: "easeInOut",
   }}
 >  
-  <h2 className="  text-center text-2xl font-montserrat">
+  <h2 className=" text-xl md:text-2xl font-montserrat text-center">
     From Our Hands To Their Hearts
   </h2>
 </motion.div>

@@ -7,7 +7,7 @@ import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa6'
 const Footer = () => {
   return (
 
-    <div className='bg-purple-700 text-white pt-8 pb-5 pl-10'>
+    <div className='bg-purple-700 text-white md:pt-8 md:pb-5 pl-5 md:pl-10'>
 
       <div className='relative'>
       <div className=''>Contact Us</div>
@@ -28,7 +28,7 @@ const Footer = () => {
        </div>
 
          <div className="mt-4">
-           <h1 className='text-center items-center'>© 2026 DEAR MAMA FOUNDATION.</h1>
+           <h1 className='text-sm text-center items-center md:text-md'>© 2026 DEAR MAMA FOUNDATION.</h1>
         </div>
 
 
