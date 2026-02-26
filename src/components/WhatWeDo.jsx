@@ -122,11 +122,6 @@ const WhatWeDo = () => {
 >
            <div className='grid  grid-flow-row items-center justify-center  md:grid md:grid-cols-2 md:gap-4 md:p-10 md:text-balance'>
 
-            <div>
-                   <img src={WhatWeDo3} 
-                   alt="Task3"
-                   className=' w-[28rem] md:w-[30rem] md:rounded-lg md:h-[35rem]' />
-               </div>
 
                <div >
                     <h1 id='Rapid' className=' pl-[6rem] pr-[5rem] scroll-mt-24 transition-all duration-700 font-montserrat text-xl text-black-500 md:text-2xl font-semibold pb-3 pt-2 md:pl-0 md:pr-0'>Rapid Crisis Response.</h1>
@@ -138,7 +133,13 @@ const WhatWeDo = () => {
                       <p className='text-sm pl-6 pb-2 text-balance leading-5 font-montserrat md:text-[16px] md:leading-6 md:pl-0'>We focus on assisting families with initial recovery steps, helping them bridge the gap between disaster and eventual stability.
                          Our readiness showcases our commitment to being there for Tanzanians during the most unpredictable moments.</p>
                </div>
-
+        
+        
+            <div>
+                   <img src={WhatWeDo3} 
+                   alt="Task3"
+                   className=' w-[28rem] md:w-[30rem] md:rounded-lg md:h-[35rem]' />
+               </div>
                
            </div>
 
