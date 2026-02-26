@@ -47,28 +47,29 @@ const WhatWeDo = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   className='flex flex-col md:flex-row gap-8 items-center py-10 overflow-hidden'
 >
-           <div className='grid grid-cols-2 gap-4 p-10 pl-15 pr-5'>
+           <div className='grid  grid-flow-row items-center justify-center pl-5 md:grid md:grid-cols-2 md:gap-4 md:p-10 md:pl-15 pr-5 md:text-balance'>
         
+            <div>
+                   <img src={womanImage11} 
+                   alt="Task1"
+                   className='rounded-lg h-[24rem] w-[35rem] ' />
+               </div>
 
                <div >
-                    <h1 id='Empowering'  className='scroll-mt-24 transition-all duration-700 font-Montserrat text-black-500 text-2xl font-semibold pb-3 pt-2'>Empowering future generation.</h1>
+                    <h1 id='Empowering'  className=' pl-9 leading-4 scroll-mt-24 transition-all duration-700 font- text-xl text-black-500 md:text-2xl  font-semibold pb-3 pt-2 md:pl-0 '>Empowering future generation.</h1>
 
-                     <p className='pb-2 font-opensans'>We believe that every child deserves a future unburdened by poverty.
+                     <p className='text-xs text-balance leading-4 md:text-[16px] md:leading-6 pb-2 font-montserrat md:text-balance '>We believe that every child deserves a future unburdened by poverty.
                       Our dedicated youth network works actively to ensure that orphans and children from impoverished backgrounds receive more than just basic aid;
                       they receive a pathway to success. 
                       We provide comprehensive, sustained support focused on breaking cycles of hardship.</p>
 
-                      <p className='font-opensans'>This involves securing access to quality education by covering school fees 
+                      <p className='text-xs leading-4 text-balance font-montserrat md:text-[16px] md:leading-6'>This involves securing access to quality education by covering school fees 
                        and providing necessary learning materials. Simultaneously, we guarantee consistent nutrition to support healthy development,
                        alongside personalized mentorship programs run by our older youth members, fostering resilience, confidence, and leadership skills. 
                        Our investment in these children is an investment in the future of Tanzania.</p>
                </div>
 
-               <div>
-                   <img src={womanImage11} 
-                   alt="Task1"
-                   className='rounded-lg h-[24rem] w-[35rem] ' />
-               </div>
+               
            </div>
 
        </motion.div>  
@@ -82,28 +83,29 @@ const WhatWeDo = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   
 >
-           <div className='grid grid-cols-2 gap-6 p-10 bg-purple-700 text-white'>
+           <div className='grid  grid-flow-row items-center justify-center pl-5 md:grid md:grid-cols-2 md:gap-6 md:p-10 bg-purple-700 text-white md:text-balance'>
 
      
-              <div>
-                   <img src={HospitalImage} 
-                   alt="Task2"
-                   className='rounded-lg h-[23rem] w-[30rem] object-cover' />
-               </div>
+            
 
                <div >
-                    <h1 id='Well-being' className='scroll-mt-24 transition-all duration-700 font-Montserrat text-black-500 text-2xl font-semibold pb-3 pt-3'>Holistic Community Well-being.</h1>
+                    <h1 id='Well-being' className='pl-9 scroll-mt-24 transition-all duration-700 font-montserrat text-xl text-black-500  md:text-2xl  font-semibold pb-3 pt-3 md:pl-0'>Holistic Community Well-being.</h1>
 
-                     <p className='pb-2 font-opensans'>The Dear Mama Charity Foundation is dedicated to serving those who are often isolated or overlooked, 
+                     <p className='text-xs pb-2  text-balance leading-4 md:text-[16px] md:leading-6 font-montserrat '>The Dear Mama Charity Foundation is dedicated to serving those who are often isolated or overlooked, 
                       ensuring they maintain their dignity during difficult times. This pillar focuses on delivering comprehensive care packages that address physical,
                        financial, and emotional needs for patients in hospitals,
                        the elderly, and incarcerated individuals.</p>
 
-                      <p className='font-opensans'>Our program structure includes delivering basic necessities like food, 
+                      <p className='text-xs pb-2 text-balance leading-4 font-montserrat md:text-[16px] md:leading-6'>Our program structure includes delivering basic necessities like food, 
                         hygiene items, and blankets directly to those in need. Furthermore, we actively seek opportunities to provide financial assistance for medical procedures or rehabilitation resources. 
                        By combining material aid with personalized advisory support, we are ensuring the well-being and successful reintegration of these special groups back into the community.</p>
                </div>
        
+             <div>
+                   <img src={HospitalImage} 
+                   alt="Task2"
+                   className='w-[23rem] h-[20rem] mb-8 rounded-lg md:h-[23rem] md:w-[30rem] md:object-cover' />
+               </div>
   
            </div>    
 
@@ -118,23 +120,26 @@ const WhatWeDo = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   className='flex flex-col md:flex-row gap-8 items-center py-10 overflow-hidden'
 >
-           <div className='grid grid-cols-2 gap-4 p-10'>
-               <div >
-                    <h1 id='Rapid' className='scroll-mt-24 transition-all duration-700 font-Montserrat text-black-500 text-2xl font-semibold pb-3 pt-2'>Rapid Crisis Response.</h1>
+           <div className='grid  grid-flow-row items-center justify-center pl-5 md:grid md:grid-cols-2 md:gap-4 md:p-10 md:text-balance'>
 
-                     <p className='pb-2 font-opensans'>The instability of unexpected events—be they natural calamities or sudden large-scale needs requires a reliable and compassionate response.
+            <div>
+                   <img src={WhatWeDo3} 
+                   alt="Task3"
+                   className=' w-[23rem] md:w-[30rem] rounded-lg md:h-[35rem]' />
+               </div>
+
+               <div >
+                    <h1 id='Rapid' className=' pl-[5rem] pr-[5rem] scroll-mt-24 transition-all duration-700 font-montserrat text-xl text-black-500 md:text-2xl font-semibold pb-3 pt-2 md:pl-0 md:pr-0'>Rapid Crisis Response.</h1>
+
+                     <p className='text-xs pb-2  text-balance leading-4 font-montserrat md:text-[16px] md:leading-6'>The instability of unexpected events—be they natural calamities or sudden large-scale needs requires a reliable and compassionate response.
                        Our foundation stands as a pillar of hope, committed to 
                        mitigating suffering and restoring stability within impacted communities.</p>
 
-                      <p className='font-opensans'>We focus on assisting families with initial recovery steps, helping them bridge the gap between disaster and eventual stability.
+                      <p className='text-xs pb-2 text-balance leading-4 font-montserrat md:text-[16px] md:leading-6'>We focus on assisting families with initial recovery steps, helping them bridge the gap between disaster and eventual stability.
                          Our readiness showcases our commitment to being there for Tanzanians during the most unpredictable moments.</p>
                </div>
 
-               <div>
-                   <img src={WhatWeDo3} 
-                   alt="Task3"
-                   className='rounded-lg h-[35rem]' />
-               </div>
+               
            </div>
 
            </motion.div>

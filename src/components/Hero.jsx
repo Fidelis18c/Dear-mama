@@ -59,7 +59,7 @@ const HeroSection = () => {
   return (
     <>
      {/* Hero Section */}
-      <div className='relative w-full h-[20rem] overflow-hidden Hidden md:flex md:relative md:h-[34rem] md:overflow-hidden'>
+      <div className='relative w-full h-[20rem] overflow-hidden Hidden md:flex md:relative md:w-full md:h-[34rem] md:overflow-hidden'>
           
         
       {/* <div
@@ -79,10 +79,10 @@ const HeroSection = () => {
       </div> */}
 
 
-      <div className="relative w-full h-[20rem] overflow-hidden">
+      <div className="relative w-full h-[20rem] overflow-hidden  md:relative md:h-[40rem]  md:object-cover md:overflow-hidden">
 
   <div
-    className="flex transition-transform duration-1000 ease-in-out"
+    className="flex transition-transform duration-1000 ease-in-out   "
     style={{
       transform: `translateX(-${currentIndex * 100}%)`,
     }}
@@ -92,7 +92,7 @@ const HeroSection = () => {
         key={index}
         src={img}
         alt={`Slide ${index}`}
-        className="w-full h-[20rem] object-cover brightness-50 flex-shrink-0"
+        className="w-full h-[20rem] flex-shrink-0 object-cover md:w-full md:h-[40rem]  md:object-cover brightness-50 md:flex-shrink-0 "
       />
     ))}
   </div>
@@ -139,7 +139,7 @@ const HeroSection = () => {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       whileHover={{ scale: 1.05 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: false, amount: 0.2 }}
       transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
       
     >
@@ -148,7 +148,7 @@ const HeroSection = () => {
               <div>
                 <img src={HeroImage8} 
                   alt=" Impact One"
-                  className='w-[25rem] h-[17rem] rounded-lg md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden md:scale-100'  /> 
+                  className='w-[25rem] h-[19rem] rounded-lg md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden md:scale-100'  /> 
                </div>
               <div>
                <h2 className=' pt-1 text-xl md:text-[20px]  text-black font-bold  text-center font-montserrat md:text-wrap md:pt-2'>Empowering future <br />generation.</h2>
@@ -169,7 +169,7 @@ const HeroSection = () => {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       whileHover={{ scale: 1.05 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: false, amount: 0.2 }}
       transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
       
     >
@@ -177,7 +177,7 @@ const HeroSection = () => {
             <div>
               <img src={HospitalImage} 
                alt=" Impact One"
-               className='w-[25rem] h-[17rem] rounded-lg md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden' /> 
+               className='w-[25rem] h-[20rem] rounded-lg md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden' /> 
             </div>
              <div>
                <h2 className='pt-1 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Holistic Community <br /> Well-being.</h2>
@@ -199,14 +199,14 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.05 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
         <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-4 mr-3 mb-5  bg-gray-200 md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:mr-[4rem] md:pb-[2rem]'>
           <div>
              <img src={womanImage2} 
              alt=" Impact One"
-             className='w-[25rem] h-[20rem] md:w-[20rem] md:h-[250px] md:overflow-x-hidden  md:object-cover md:overflow-y-hidden md:scale-100' /> 
+             className='w-[25rem] h-[25rem] md:w-[20rem] md:h-[250px] md:overflow-x-hidden  md:object-cover md:overflow-y-hidden md:scale-100' /> 
           </div>
            <div>
              <h2 className='pt-1 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Rapid Crisis Response</h2>
