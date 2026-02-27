@@ -140,9 +140,9 @@ const Navbar = () => {
   {/* Trigger Button */}
   <div 
     onClick={handleReportToggle}
-    className='hidden md:flex md:items-center md:gap-1 hover:text-purple-700 cursor-pointer'
+    className='hidden md:flex md:items-center md:font-[1] md:gap-1 hover:text-purple-700 cursor-pointer'
   > 
-    <span className="md:font-montserrat">Events and Reports</span>
+    <span className=" md:font-montserrat">Events and Reports</span>
     <FaChevronDown className={`h-3 mt-1 transition-transform ${reportDropdownOpen ? 'rotate-180' : ''}`}/>
   </div>
       
