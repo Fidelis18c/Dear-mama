@@ -152,7 +152,7 @@ const HeroSection = () => {
                </div>
               <div>
                <h2 className=' pt-1 text-xl md:text-[20px]  text-black font-bold  text-center font-montserrat md:text-wrap md:pt-2'>Empowering future <br />generation.</h2>
-                <p className=' ml-[1rem] max-w-64 text-sm text-balance font-light  text-center md:text-balance md:text md:ml-[2rem] md:max-w-xs md:text-black md:text-left md:text-sm md:pt-5 md:pl-6 md:pr-1'>We ensure orphans and children from
+                <p className=' ml-[1rem] max-w-80 text-sm text-balance font-light  text-center md:text-balance md:text md:ml-[2rem] md:max-w-xs md:text-black md:text-left md:text-sm md:pt-5 md:pl-6 md:pr-1'>We ensure orphans and children from
                 impoverished backgrounds receive vital support, focusing on access to education, 
                 nutrition, and mentorship.</p>
               </div>
