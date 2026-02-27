@@ -181,7 +181,7 @@ const HeroSection = () => {
             </div>
              <div>
                <h2 className='pt-1 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Holistic Community <br /> Well-being.</h2>
-                <p className='max-w-xs ml-7 pt-2 text-black md:text-balance font-light text-left text-sm md:pt-2 pl-4 md:ml-7 pr-5 '>Our volunteers provide 100% support to patients in hospitals, 
+                <p className='max-w-sm ml-7 pt-2 text-black md:text-balance font-light text-left text-sm md:pt-2 pl-4 md:ml-7 pr-5 '>Our volunteers provide 100% support to patients in hospitals, 
                the elderly, and prisoners. This includes providing basic necessities, financial assistance for treatment,
                and crucial advisory and emotional support to foster dignity and hope during difficult times.</p>
             </div>
