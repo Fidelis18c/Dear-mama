@@ -210,7 +210,7 @@ const HeroSection = () => {
           </div>
            <div>
              <h2 className='pt-1 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Rapid Crisis Response</h2>
-             <p className='max-w-xs pt-2 text-black text-left md:text-balance font-light md:ml-3 text-sm md:pt-3 pl-6 pr-2'>We mobilize swiftly to address unexpected community emergencies and natural disasters,
+             <p className='max-w-sm pt-2 text-black text-left md:text-balance font-light md:ml-3 text-sm md:pt-3 pl-6 pr-2'>We mobilize swiftly to address unexpected community emergencies and natural disasters,
              such as floods or severe food shortages. 
               Our youth network ensures immediate material aid and relief reaches affected communities rapidly when they need it most.</p>
            </div>
