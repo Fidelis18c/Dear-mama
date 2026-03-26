@@ -59,7 +59,7 @@ const HeroSection = () => {
   return (
     <>
      {/* Hero Section */}
-      <div className='relative w-full h-[20rem] overflow-hidden Hidden md:flex md:relative md:w-full md:h-[34rem] md:overflow-hidden'>
+      <div className='relative w-full h-[20rem] overflow-hidden Hidden md:flex md:relative md:w-full md:h-[34rem] md:overflow-hidden md:overflow-x-hidden'>
           
         
       {/* <div
@@ -152,7 +152,7 @@ const HeroSection = () => {
                </div>
               <div>
                <h2 className=' pt-1 text-xl md:text-[20px]  text-black font-bold  text-center font-montserrat md:text-wrap md:pt-2'>Empowering future <br />generation.</h2>
-                <p className=' ml-[1rem] max-w-80 text-sm text-balance font-light  text-center md:text-balance md:text md:ml-[2rem] md:max-w-xs md:text-black md:text-left md:text-sm md:pt-5 md:pl-6 md:pr-1'>We ensure orphans and children from
+                <p className=' ml-[1rem] max-w-80 text-sm text-balance font-light  text-center md:text-balance  md:ml-[2rem] md:max-w-xs md:text-black md:text-left md:text-sm md:pt-5 md:pl-6 md:pr-1'>We ensure orphans and children from
                 impoverished backgrounds receive vital support, focusing on access to education, 
                 nutrition, and mentorship.</p>
               </div>
@@ -206,7 +206,7 @@ const HeroSection = () => {
           <div>
              <img src={womanImage2} 
              alt=" Impact One"
-             className='w-[25rem] h-[24rem] md:w-[20rem] md:h-[250px] md:overflow-x-hidden  md:object-cover md:overflow-y-hidden md:scale-100' /> 
+             className='w-[25rem] h-[24rem] md:w-[20rem] rounded-lg md:h-[250px] md:overflow-x-hidden  md:object-cover md:overflow-y-hidden md:scale-100' /> 
           </div>
            <div>
              <h2 className='pt-1 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Rapid Crisis Response</h2>
