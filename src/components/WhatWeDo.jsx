@@ -34,7 +34,8 @@ const WhatWeDo = () => {
 
 
   return (
-    <div>
+    <div className='bg-customPink md:bg-transparent'>
+        <div className='text-center md:w-1/2  border md:border-none '></div>
   
         <div className='overflow-x-hidden'>
           {/* TASK1 */}
@@ -47,23 +48,23 @@ const WhatWeDo = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   className='flex flex-col md:flex-row gap-8 items-center md:py-10 overflow-hidden'
 >
-           <div className='grid  grid-flow-row items-center justify-center pt-4 rounded-lg bg-gray-200 m-5 mt-4  md:m-0 md:bg-transparent   md:grid md:grid-cols-2 md:gap-4 md:pl-0 md:pl-15  md:text-balance md:pt-0'>
+           <div className='grid  grid-flow-row items-center justify-center  rounded-lg bg-gray-200 m-3 mt-4  md:m-0 md:bg-transparent   md:grid md:grid-cols-2 md:gap-4 md:pl-0 md:pl-15  md:text-balance md:pt-0'>
         
             <div>
                    <img src={womanImage11} 
                    alt="Task1"
-                   className=' w-[22rem] h-[15rem] pb-4  md:rounded-lg object-cover md:object-cover md:h-[25rem] md:w-[37rem] md:pl-[3rem] md:ml-0 ' />
+                   className=' w-[25rem] h-[20rem] pb-4  md:rounded-lg object-cover md:object-cover md:h-[25rem] md:w-[37rem] md:pl-[3rem] md:ml-0 ' />
                </div>
 
-               <div className='md:max-w-none max-w-80' >
+               <div className='md:max-w-none max-w-92' >
                     <h1 id='Empowering'  className=' pl-[1rem] pb-3 leading-4 text-center scroll-mt-24 transition-all duration-700 font- text-xl text-black-500 md:text-2xl md:text-left  font-semibold md:pb-3 md:pt-2 md:pl-0 '>Empowering future generation.</h1>
 
-                     <p className=' text-sm  pl-6  font-light leading-5 md:text-[16px] md:text-left md:leading-6 pb-2 md:pl-0 font-montserrat md:text-balance  '>We believe that every child deserves a future unburdened by poverty.
+                     <p className=' text-sm  pl-4  font-light leading-5 md:text-[16px] md:text-left md:leading-6 pb-2 md:pl-0 font-montserrat md:text-balance  '>We believe that every child deserves a future unburdened by poverty.
                       Our dedicated youth network works actively to ensure that orphans and children from impoverished backgrounds receive more than just basic aid;
                       they receive a pathway to success. 
                       We provide comprehensive, sustained support focused on breaking cycles of hardship.</p>
 
-                      <p className='text-sm pl-6 pb-5 md:pb-0 font-light leading-5 text-balance font-montserrat md:text-[16px] md:text-left md:pl-0 md:leading-6'>This involves securing access to quality education by covering school fees 
+                      <p className='text-sm pl-4 pb-5 md:pb-0 font-light leading-5 text-balance font-montserrat md:text-[16px] md:text-left md:pl-0 md:leading-6'>This involves securing access to quality education by covering school fees 
                        and providing necessary learning materials. Simultaneously, we guarantee consistent nutrition to support healthy development,
                        alongside personalized mentorship programs run by our older youth members, fostering resilience, confidence, and leadership skills. 
                        Our investment in these children is an investment in the future of Tanzania.</p>
@@ -83,20 +84,20 @@ const WhatWeDo = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   
 >
-           <div className='grid  grid-flow-row items-center justify-center rounded-lg m-5 mt-2 md:grid md:grid-cols-2 md:gap-6 md:p-10 bg-purple-700 text-white md:text-balance overflow-hidden md:m-0'>
+           <div className='grid  grid-flow-row items-center justify-center rounded-lg m-3  mt-2 md:grid md:grid-cols-2 md:gap-6 md:p-10  bg-purple-700 text-white md:text-balance overflow-hidden md:m-0'>
 
      
             
 
-               <div >
+               <div className='' >
                     <h1 id='Well-being' className='pl-[1rem] scroll-mt-24 transition-all duration-700 font-montserrat text-center text-xl text-black-500  md:text-2xl md:text-left  font-semibold pb-3 pt-3 md:pl-0'>Holistic Community Well-being.</h1>
 
-                     <p className='text-sm pl-6 pb-4  text-balance font-light leading-5 md:text-[16px] md:leading-6 font-montserrat md:pl-0 '>The Dear Mama Charity Foundation is dedicated to serving those who are often isolated or overlooked, 
+                     <p className='text-sm pl-4 pb-4  text-balance font-light leading-5 md:text-[16px] md:leading-6 font-montserrat md:pl-0 '>The Dear Mama Charity Foundation is dedicated to serving those who are often isolated or overlooked, 
                       ensuring they maintain their dignity during difficult times. This pillar focuses on delivering comprehensive care packages that address physical,
                        financial, and emotional needs for patients in hospitals,
                        the elderly, and incarcerated individuals.</p>
 
-                      <p className='text-sm pl-6   text-balance font-light leading-5 font-montserrat md:text-[16px] md:leading-6 md:pl-0'>Our program structure includes delivering basic necessities like food, 
+                      <p className='text-sm pl-4   text-balance font-light leading-5 font-montserrat md:text-[16px] md:leading-6 md:pl-0'>Our program structure includes delivering basic necessities like food, 
                         hygiene items, and blankets directly to those in need. Furthermore, we actively seek opportunities to provide financial assistance for medical procedures or rehabilitation resources. 
                        By combining material aid with personalized advisory support, we are ensuring the well-being and successful reintegration of these special groups back into the community.</p>
                </div>
@@ -104,7 +105,7 @@ const WhatWeDo = () => {
              <div>
                    <img src={HospitalImage} 
                    alt="Task2"
-                   className='w-[22rem] h-[18rem] pb-4 rounded-lg md:pt-3  pt-2 object-cover  md:rounded-lg md:h-[28rem] md:w-[35rem] md:object-cover' />
+                   className='w-[25rem] h-[22rem]  rounded-lg md:pt-3  pt-2 object-cover  md:rounded-lg md:h-[28rem] md:w-[35rem] md:object-cover' />
                </div>
   
            </div>    
@@ -118,19 +119,19 @@ const WhatWeDo = () => {
   whileInView={{ opacity: 1, x: 0 }} // Slides to its natural position
   viewport={{ once: true, amount: 0.2 }} // Triggers when 20% visible
   transition={{ duration: 0.8, ease: "easeOut" }}
-  className='flex flex-col md:flex-row gap-8 items-center py-10 overflow-hidden'
+  className='flex flex-col md:flex-row gap-8 items-center py-3 md:py-10 overflow-hidden'
 >
-           <div className='grid  grid-flow-row items-center justify-center rounded-lg m-5  bg-gray-200   md:grid md:grid-cols-2 md:gap-4 md:p-10 md:pt-0 md:text-balance md:bg-transparent md:m-0'>
+           <div className='grid  grid-flow-row items-center justify-center rounded-lg m-3  bg-gray-200   md:grid md:grid-cols-2 md:gap-4 md:p-10 md:pt-0 md:text-balance md:bg-transparent md:m-0'>
 
 
                <div>
                     <h1 id='Rapid' className=' pl-[1rem] pr-[4rem] scroll-mt-24 transition-all duration-700 text-center md:text-left font-montserrat text-xl text-black-500 md:text-2xl font-semibold pb-3 pt-2 md:pl-0 md:pr-0 '>Rapid Crisis Response.</h1>
 
-                     <p className='text-md  pl-6 pb-2 font-light text-balance leading-5 font-montserrat md:text-[16px] md:leading-6 md:pl-0 '>The instability of unexpected events—be they natural calamities or sudden large-scale needs requires a reliable and compassionate response.
+                     <p className='text-md  pl-4 pb-2 font-light text-balance leading-5 font-montserrat md:text-[16px] md:leading-6 md:pl-0 '>The instability of unexpected events—be they natural calamities or sudden large-scale needs requires a reliable and compassionate response.
                        Our foundation stands as a pillar of hope, committed to 
                        mitigating suffering and restoring stability within impacted communities.</p>
 
-                      <p className='text-md pl-6 pb-2 font-light text-balance leading-5 font-montserrat md:text-[16px] md:leading-6 md:pl-0'>We focus on assisting families with initial recovery steps, helping them bridge the gap between disaster and eventual stability.
+                      <p className='text-md pl-3 pb-4 font-light text-balance leading-5 font-montserrat md:text-[16px] md:leading-6 md:pl-0'>We focus on assisting families with initial recovery steps, helping them bridge the gap between disaster and eventual stability.
                          Our readiness showcases our commitment to being there for Tanzanians during the most unpredictable moments.</p>
                </div>
         
@@ -146,7 +147,7 @@ const WhatWeDo = () => {
            </motion.div>
 
 </div>
-           <div className='bg-customPink p-10 '>
+           <div className='bg-customPink p-5 '>
                <h1 className=' text-center font-Montserrat text-2xl  pb-3'>From Our Hands to Their Hearts</h1>
            </div>
 

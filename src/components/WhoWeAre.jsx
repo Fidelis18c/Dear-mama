@@ -11,14 +11,14 @@ import { motion } from 'framer-motion';
 const WhoWeAre = () => {
   return (
     <>
-      <div>
+      <div className='bg-customPink' >
         <div className='relative'>
             <img src={WHOimage}
             alt=""
-            className='w-full h-[34rem] object-cover flex-shrink-0' />
+            className='w-full h-[29rem] md:w-full md:h-[34rem] object-cover flex-shrink-0' />
 
-            <div className='absolute inset-0 left-10 top-[15rem] font-montserrat text-white'>
-                <h1 className='text-5xl font-bold  text-center'>More Than Foundation, We Are Family.</h1>
+            <div className='absolute inset-0 left-10 top-[19rem] md:top-[15rem] font-montserrat text-white'>
+                <h1 className='max-w-80 md:max-w-none text-3xl md:text-5xl font-bold  text-center'>More Than Foundation, We Are Family.</h1>
             </div>
 
             <div className='bg-customPink'>
@@ -39,16 +39,16 @@ const WhoWeAre = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   
 >
-       <div className=' bg-purple-700 p-10 flex items-center justify-center gap-5'>
+       <div className=' bg-purple-700 md:p-10 rounded-lg m-3 md:m-0 md:flex md:items-center justify-center md:gap-5'>
          <div className=''>
-            <p className='max-w-3xl text-white'>Today, Dear Mama is a vibrant network of volunteers and youth leaders driven by a single purpose, 
+            <p className='max-w-3xl p-5 text-white md:p-0'>Today, Dear Mama is a vibrant network of volunteers and youth leaders driven by a single purpose, 
                  providing help straight from our hearts to those in need. <br /> We are not a place of formal processes,
                  we are a community that welcomes anyone whose heart has been touched by our cause to join us in serving.</p>
          </div>
          <div>
             <img src={Task2image}
              alt="Who2image" 
-            className='w-98 h-96 object-cover rounded-sm'/>
+            className='w-[28rem] h-[20rem] md:w-[38rem] md:h-96 object-cover rounded-sm'/>
          </div>
        </div>
 </motion.div>
@@ -69,19 +69,24 @@ const WhoWeAre = () => {
       <h1 className=' text-center text-3xl p-5 '>Who We Serve</h1>
     </div>
 
-     <div className=' grid grid-cols-2 justify-center items-center bg-customPink pb-10'>
+     <div className='pl-[1rem] md:pl-0 flex flex-row md:gap-0 md:grid md:grid-cols-2 justify-center items-center bg-customPink pb-10'>
 
-      <div className='mr-[-15rem] pl-10 grid grid-rows-2 justify-center items-center max-w-5xl -space-y-8 '>
+      <div className=' md:mr-[-15rem] md:pl-10 md:grid md:grid-rows-2 justify-center items-center max-w-5xl -space-y-8 '>
 
     <motion.div 
+      md:whileInView={{ opacity: 1, y: 0 }}
+      md:whileHover={{ scale: 1.02 }}
+      md:viewport={{ once: true, amount: 0.2 }}  
+
       whileInView={{ opacity: 1, y: 0 }}
       whileHover={{ scale: 1.02 }}
       viewport={{ once: true, amount: 0.2 }}   
+
     >
       <div>
         <img src={ChildrensImage} 
         alt="Childrens" 
-        className='w-[20rem] h-[20rem] object-cover  rounded-full shadow-xl z-10 overflow-hidden border-4 border-whit'
+        className='w-[12rem] h-[12rem] md:w-[20rem] md:h-[20rem] object-cover  rounded-full shadow-xl z-10 overflow-hidden border-4 border-whit'
         />
       
       </div>
@@ -95,7 +100,7 @@ const WhoWeAre = () => {
       <div>
         <img src={Task2image}
         alt="Patients"
-        className='w-[20rem] h-[20rem] object-cover rounded-full shadow-xl border-4 border-whit' />
+        className='w-[12rem] h-[12rem] md:w-[20rem] md:h-[20rem] object-cover rounded-full shadow-xl border-4 border-whit' />
   
       </div>
  </motion.div>
@@ -110,7 +115,7 @@ const WhoWeAre = () => {
       <div className='ml-[-5rem]'>
         <img src={PrisonersImage} 
         alt="Prisoners"
-        className='w-[30rem]  h-[30rem] object-cover rounded-full shadow-xl border-4 border-whit'/>
+        className='w-[15rem] h-[15rem]   rounded-full md:w-[30rem] md:h-[30rem]  object-cover md:rounded-full shadow-xl border-4 border-whit'/>
         
       </div> 
 

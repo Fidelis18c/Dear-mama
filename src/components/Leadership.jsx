@@ -19,18 +19,18 @@ const Leadership = () => {
 
     {/* OUR LEADERHIP AND CORE VALUES SUBPAGE */}
 
-                <div>
-                    <div className='text-center text-2xl'>
+                <div className=''>
+                    <div className='pt-5 text-center text-2xl'>
                         <h1>OUR LEADERSHIP</h1>
                     </div>
 
-                    <div  className='grid grid-cols-2 p-10 pl-[15rem] justify-center items-center relative'>
-                        <div className='relative '>
+                    <div  className='justify-center items-center md:grid md:grid-cols-2 md:p-10 md:pl-[15rem] md:justify-center md:items-center relative'>
+                        <div className='relative md:mb-0 mb-[3rem] md:mt-0 mt-[2rem] left-7 md:left-0'>
                             <img src={HamzaImage} alt="Hamza"
                              className='  w-[20rem] rounded-lg'
                             />
 
-                               <div className='absolute bottom-0 text-white text-center z-10  bg-black/60  pl-20 pr-[9.1rem] '>
+                               <div className='justify-center absolute bottom-0 text-white text-center  z-10  bg-black/60  pl-20 pr-[9.1rem] '>
                                  <h1>HAMZA SAID</h1>
                                  <h2>Mwenyekiti</h2>
                     
@@ -39,7 +39,7 @@ const Leadership = () => {
                         </div>
                        
 
-                         <div className='relative'>
+                         <div className='relative md:mb-0 mb-[3rem] left-7 md:left-0'>
                             <img src={EmmaImage} alt="Emma"
                              className='w-[20rem] rounded-lg '
                             />
@@ -53,18 +53,19 @@ const Leadership = () => {
 
                     </div>
 
-                    <div className='grid grid-cols-2 p-10 pl-[15rem] justify-center items-center text-center'>
-                        <div className='relative'>
+                    <div className='text-center justify-center md:grid md:grid-cols-2 md:p-10 md:pl-[15rem] md:justify-center md:items-center md:text-center'>
+                        <div className='relative md:mb-0 mb-[3rem] left-7 md:left-0'>
                             <img src={MariamImage} alt="Mariam" 
                              className='w-[20rem] rounded-lg '
                             />
 
-                              <div className='absolute bottom-0 text-white text-center z-10  bg-black/60  pl-20  pr-[8.7rem] '>
-                                 <h1>MARIAM SAID</h1>
+                              <div className='absolute  bottom-0 text-white text-center justify-center z-10  bg-black/60  pl-20  pr-[8.7rem] '>
+                                 <h1 className=''>MARIAM SAID</h1>
                                  <h2>Katibu Mkuu</h2>             
                                </div>  
                         </div>
-                        <div className='relative'>
+
+                        <div className='relative md:mb-0 mb-[3rem] left-7 md:left-0'>
                             <img src={JonaImage} alt="Jona" 
                              className='w-[20rem] rounded-lg '
                             />
@@ -100,9 +101,9 @@ const Leadership = () => {
             
 
                {/* OUR CORE VALUES */}
-               <div className='bg-customPink'>
+               <div className='md:bg-customPink'>
                      <div>
-                         <h1 className='text-center font-montserrat text-2xl pt-4'>OUR CORE VALUES</h1>
+                         <h1 className='md:text-center md:font-montserrat md:text-2xl md:pt-4 '>OUR CORE VALUES</h1>
                      </div>
 
                      <div className='flex justify-center gap-10 items-center pt-5 pb-10'>

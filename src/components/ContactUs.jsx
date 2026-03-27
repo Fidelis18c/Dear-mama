@@ -45,13 +45,13 @@ const ContactUs = () => {
       <div className=''>
         <img src={HeroImage5} 
         alt="Contact Us" 
-        className='w-full h-[50rem]' />
+        className='md:w-full md:h-[50rem]' />
       </div>
 
     <div className='flex flex-row  bg-customPink  '>
 
       
-   <div className='ml-[10rem] mt-5'>
+   <div className='md:ml-[10rem] mt-5'>
    <div className='pl-10 bg-customPink'>
       <div>
         <h2 className="text-2xl font-semibold mb-4">Write to us</h2>
@@ -104,7 +104,7 @@ const ContactUs = () => {
   
    
 
-     <div className='bg-white rounded-lg max-w-80 p-7 pr-5 mb-10 mt-12 ml-[15rem]'>
+     <div className='absolute bg-white rounded-lg max-w-80 p-7 pr-5 mb-10 md:mt-12 bottom-2rem  mr-[4rem] md:mr-0 md:ml-[15rem]'>
       <div className=''>
       <h2 className="text-xl font-semibold mb-4">CONTACTS</h2>
       <h3 className=" font-medium">Address</h3>
