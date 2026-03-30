@@ -90,7 +90,7 @@ const Donate = ({ IsOpen, setIsOpen }) => {
             exit={{ scale: 0.7, opacity: 0, y: 50 }}
             transition={{ type: "spring", damping: 20, stiffness: 300 }}
             onClick={(e) => e.stopPropagation()}
-            className="bg-white w-[20rem] ml-[2rem] mt-[25rem] rounded-3xl md:mt-0 md:shadow-2xl md:max-w-2xl md:ml-0 md:w-full md:relative"
+            className="bg-white w-[20rem] ml-[3rem] mt-[25rem] rounded-3xl md:mt-0 md:shadow-2xl md:max-w-2xl md:ml-0 md:w-full md:relative"
 
           >
             {/* Close button */}
