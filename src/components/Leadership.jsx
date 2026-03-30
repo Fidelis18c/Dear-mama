@@ -25,7 +25,7 @@ const Leadership = () => {
                     </div>
 
                     <div  className='justify-center items-center md:grid md:grid-cols-2 md:p-10 md:pl-[15rem] md:justify-center md:items-center relative'>
-                        <div className='relative md:mb-0 mb-[3rem] md:mt-0 mt-[2rem] left-9 md:left-0'>
+                        <div className='relative md:mb-0 mb-[3rem] md:mt-0 mt-[2rem] left-10 md:left-0'>
                             <img src={HamzaImage} alt="Hamza"
                              className='  w-[20rem] rounded-lg'
                             />
@@ -39,7 +39,7 @@ const Leadership = () => {
                         </div>
                        
 
-                         <div className='relative md:mb-0 mb-[3rem] left-9 md:left-0'>
+                         <div className='relative md:mb-0 mb-[3rem] left-10 md:left-0'>
                             <img src={EmmaImage} alt="Emma"
                              className='w-[20rem] rounded-lg '
                             />
@@ -54,7 +54,7 @@ const Leadership = () => {
                     </div>
 
                     <div className='text-center justify-center md:grid md:grid-cols-2 md:p-10 md:pl-[15rem] md:justify-center md:items-center md:text-center'>
-                        <div className='relative md:mb-0 mb-[3rem] left-9 md:left-0'>
+                        <div className='relative md:mb-0 mb-[3rem] left-10 md:left-0'>
                             <img src={MariamImage} alt="Mariam" 
                              className='w-[20rem] rounded-lg '
                             />
@@ -65,7 +65,7 @@ const Leadership = () => {
                                </div>  
                         </div>
 
-                        <div className='relative md:mb-0 mb-[3rem] left-9 md:left-0'>
+                        <div className='relative md:mb-0 mb-[3rem] left-10 md:left-0'>
                             <img src={JonaImage} alt="Jona" 
                              className='w-[20rem] rounded-lg '
                             />
