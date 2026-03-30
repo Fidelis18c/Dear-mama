@@ -3,6 +3,7 @@ import WHOimage from '../assets/WHO.png';
 import { Link } from 'react-router-dom';
 import Donate from './Donate';
 import HeroImage5 from '../assets/Hero5.jpeg';
+import ReportImage2 from '../assets/Report2.png'
 
 
 
@@ -34,6 +35,12 @@ const GetInvolved = () => {
       </div>
 
       <Donate IsOpen={IsOpen} setIsOpen={setIsOpen} />
+
+            <div className='md:hidden'>
+              <img src={ReportImage2}
+               alt="Report Image 2" 
+               className='md:w-full md:h-[50rem]'/>
+            </div>
               
         
     </>

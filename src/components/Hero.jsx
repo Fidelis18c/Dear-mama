@@ -59,7 +59,7 @@ const HeroSection = () => {
   return (
     <>
      {/* Hero Section */}
-      <div className='relative w-full h-[20rem] overflow-hidden Hidden md:flex md:relative md:w-full md:h-[34rem] md:overflow-hidden md:overflow-x-hidden'>
+      <div className='relative w-full h-[20rem] overflow-hidden Hidden md:flex md:relative md:w-full md:h-[40rem]  '>
           
         
       {/* <div
@@ -79,7 +79,7 @@ const HeroSection = () => {
       </div> */}
 
 
-      <div className="relative w-full h-[20rem] overflow-hidden  md:relative md:h-[40rem]  md:object-cover md:overflow-hidden">
+      <div className="relative    ">
 
   <div
     className="flex transition-transform duration-1000 ease-in-out   "
@@ -92,7 +92,7 @@ const HeroSection = () => {
         key={index}
         src={img}
         alt={`Slide ${index}`}
-        className="w-full h-[20rem] flex-shrink-0 object-cover md:w-full md:h-[40rem]  md:object-cover brightness-50 md:flex-shrink-0 "
+        className="w-full h-[20rem] flex-shrink-0 object-cover md:h-[40rem]  brightness-50  "
       />
     ))}
   </div>
@@ -115,7 +115,7 @@ const HeroSection = () => {
             </p>
 
   
-             <button className=' absolute bottom-[8rem] px-2 py-2  md:absolute  md:bottom-[10rem] md:inline-block border-2   border-white  md:px-8 md:py-3 rounded-md text-lg transition duration-300 hover:bg-white hover:text-gray-800' onClick={handleWhoWeAreClick} >
+             <button className=' absolute bottom-[7rem] px-2 py-2  md:absolute  md:bottom-[16rem] md:inline-block border-2   border-white  md:px-8 md:py-3 rounded-md text-lg transition duration-300 hover:bg-white hover:text-gray-800' onClick={handleWhoWeAreClick} >
                 Who we Are
             </button>
           </div>

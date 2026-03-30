@@ -2,6 +2,8 @@ import React from 'react'
 import ReportImage from '../assets/Report1.png'
 import ReportImage2 from '../assets/Report2.png'
 import HeroImage5 from '../assets/Hero5.jpeg';
+import HospitalImage from '../assets/Hospital.jpeg';
+import childImage from '../assets/Children.jpeg';
 
 const LatestEvents = () => {
   return (
@@ -16,15 +18,15 @@ const LatestEvents = () => {
               </div>
       
       
-             <div className='p-10 flex items-center gap-10'>
+             <div className='p-10 md:flex md:flex-row items-center gap-10'>
                <div className='max-w-80 bg-customPink rounded-xl overflow-hidden shadow-md ml-[2rem] pb-[3rem]'>
                 <div>
-                  <img src={ReportImage} 
+                  <img src={HospitalImage} 
                   alt="Report Image"
-                  className='w-[15rem] h-[10rem] pb-3 object-cover overflow-x-hidden overflow-y-hidden' />
+                  className='w-[18rem] h-[15rem] md:w-[15rem] md:h-[10rem] pb-3 object-cover overflow-x-hidden overflow-y-hidden' />
                 </div>
                 <div className='pt-3'>
-                    <h2 className='pb-4 pl-3  bg-purple-700 text-white text-center font-semibold rounded-md ml-5 mr-5'>Visiting Patients at <br /> Hospital</h2>
+                    <h2 className='pb-2 pl-2  bg-purple-700 text-white text-center font-semibold rounded-md ml-5 mr-5'>Visiting Patients at <br /> Hospital</h2>
               
                 </div>
       
@@ -35,19 +37,20 @@ const LatestEvents = () => {
       
              </div>
       
-          <div className='max-w-80 bg-customPink rounded-xl overflow-hidden shadow-md ml-[2rem] pb-[3rem]'>
+          <div className='max-w-80 mt-[2rem] bg-customPink rounded-xl overflow-hidden shadow-md ml-[2rem] pb-[3rem] md:mt-0'>
                 <div>
-                  <img src={ReportImage} 
+                  <img src={childImage} 
                   alt="Report Image"
-                  className='w-[15rem] h-[10rem] pb-3 object-cover overflow-x-hidden overflow-y-hidden  ' />
+                  className='w-[18rem] h-[15rem] md:w-[15rem] md:h-[10rem] pb-3 object-cover overflow-x-hidden overflow-y-hidden  ' />
                 </div>
                 <div className='pt-3'>
-                    <h2 className='pb-4 pl-3  bg-purple-700 text-white text-center font-semibold rounded-md ml-5 mr-5'>Visiting  Chiildrens</h2>
+                    <h2 className='pb-4 pl-3  bg-purple-700 text-white text-center font-semibold rounded-md ml-5 mr-5'>Visiting  Childrens</h2>
               
                 </div>
       
                 <div className='pt-5 pl-4'>
                    <p>29/09/2025</p>
+                    <p>Mpanda Municipal Hospital</p>
                 </div>
       
              </div>
@@ -58,7 +61,7 @@ const LatestEvents = () => {
            <div>
               <img src={HeroImage5}
                alt="Report Image 2" 
-               className='w-full h-[50rem] '/>
+               className='md:w-full md:h-[50rem] '/>
              </div>
     </>
   )

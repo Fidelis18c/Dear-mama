@@ -81,7 +81,7 @@ const Donate = ({ IsOpen, setIsOpen }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[999] flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[999] md:flex md:items-center md:justify-center md:p-4"
         >
           <motion.div
             // Popup card
@@ -90,13 +90,13 @@ const Donate = ({ IsOpen, setIsOpen }) => {
             exit={{ scale: 0.7, opacity: 0, y: 50 }}
             transition={{ type: "spring", damping: 20, stiffness: 300 }}
             onClick={(e) => e.stopPropagation()}
-            className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full relative"
+            className="bg-white w-[20rem] ml-[2rem] mt-[25rem] rounded-3xl md:mt-0 md:shadow-2xl md:max-w-2xl md:ml-0 md:w-full md:relative"
 
           >
             {/* Close button */}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-4 right-6 text-3xl font-bold text-gray-400 hover:text-gray-800"
+              className="absolute  top-4 right-6 md:text-3xl font-bold text-gray-400 hover:text-gray-800"
               aria-label="Close"
               type="button"
             >
@@ -110,11 +110,11 @@ const Donate = ({ IsOpen, setIsOpen }) => {
                   <img
                     src={DearMama}
                     alt="Dear Mama Foundation"
-                    className="w-20 h-auto"
+                    className="w-12 h-12 md:w-20 md:h-auto"
                   />
                 </Link>
 
-                <div className="text-lg font-opensans">
+                <div className=" text-md md:text-lg font-opensans">
                   <Link to="/">
                     <b>DEAR MAMA</b> FOUNDATION
                   </Link>
@@ -124,20 +124,20 @@ const Donate = ({ IsOpen, setIsOpen }) => {
               {/* Title */}
               <div className="flex flex-col justify-center items-center ">
                 <div className="text-center">
-                  <h2 className="text-2xl">Donate to</h2>
-                  <h2 className="font-semibold text-3xl">
+                  <h2 className="text-md md:text-2xl">Donate to</h2>
+                  <h2 className="font-semibold text-xl md:text-3xl">
                     DEAR MAMA FOUNDATION
                   </h2>
                 </div>
 
-                <p className=" text-center max-w-xl">
+                <p className=" text-sm md:text-md text-center max-w-md md:max-w-xl">
                   When you donate you are giving more than a gift, you are giving
                   hope, strength, and a reason to smile.
                 </p>
               </div>
 
               {/* Payment */}
-              <div className="flex flex-col md:flex-row items-center justify-center gap-0">
+              <div className="flex flex-row items-center justify-center gap-0">
                 <img
                   src={MixxImage}
                   alt="Mixx By YAS"
@@ -147,7 +147,7 @@ const Donate = ({ IsOpen, setIsOpen }) => {
                 <img
                   src={ airtelImage}
                   alt="Airtel Money"
-                  className="w-[5rem] h-[2rem] object-contain"
+                  className="w-[5rem] md:h-[2rem] h-[2rem] pt-1 md:pt-0 object-contain"
                 />
                 <img
                   src={HalopesaImage}
