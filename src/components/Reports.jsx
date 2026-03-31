@@ -2,6 +2,7 @@ import React from 'react'
 import ReportImage from '../assets/Report1.png'
 import ReportImage2 from '../assets/Report2.png'
 import AnnualImage from '../assets/Annual.jpeg'
+import reportPDF from '../assets/RIPOTI YA DEAR MAMA FOUNDATION-1.pdf'
 
 
 const Reports = () => {
@@ -22,7 +23,11 @@ const Reports = () => {
           <div className='pt-3'>
               <h2 className='pb-2 pl-3'>2025 Annual Report</h2>
 
-              <a href="" className=' rounded-full px-3 py-2 bg-purple-600 text-white hover:bg-purple-700 ml-2 mt-2'>View Report</a>
+              <a href={reportPDF}
+               target="_blank" 
+               rel="noopener noreferrer" 
+               className=' rounded-full px-3 py-2 bg-purple-600 text-white hover:bg-purple-700 ml-2 mt-2'>
+                View Report</a>
           </div>
        </div>
        </div>
