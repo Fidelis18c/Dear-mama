@@ -72,7 +72,7 @@ const Navbar = () => {
               </div>
 
              {AboutusDropdownOpen && (
-        <div className="flex flex-col px-8 pb-3 gap-1 text-sm h-[3rem] bg-white font-semibold text-gray-600"> 
+        <div className="flex flex-col px-8 pb-3 ml-3 gap-1 text-sm h-[3rem] bg-white font-semibold text-gray-600"> 
           <Link to="/history" className='hover:text-purple-700 space-y-4'
            onClick={() => {setAboutusDropdownOpen(false); setIsMenuOpen(false);}}
            >
@@ -100,7 +100,7 @@ const Navbar = () => {
           </div>
            
           {reportDropdownOpen && (
-             <div className="flex flex-col px-8 pb-3 gap-1 text-sm h-[3rem] bg-white font-semibold text-gray-600">
+             <div className="flex flex-col px-8 pb-3  ml-3 gap-1 text-sm h-[3rem] bg-white font-semibold text-gray-600">
                 <Link to="/latestevents"  onClick={() => {setReportDropdownOpen(false); setIsMenuOpen(false);}}
                 >Latest Events
                 </Link>
