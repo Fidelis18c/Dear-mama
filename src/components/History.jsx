@@ -3,7 +3,7 @@ import OurHistoryImage from '../assets/History.png'
 
 const History = () => {
   return (
-    <div className='md:flex md:flex-row items-center gap-10' >
+    <div className='md:flex md:flex-row items-center gap-10 min-h-screen font-Montserrat' >
          <div className='md:p-20 pl-5 md:pl-12 md:w-[50rem] md:pb-10 break-normal font-Montserrat'> 
           
               <h1 className='pt-10 pb-3   md:pt-0 md:text-left text-2xl md:text-2xl md:pb-3 md:pl-0 text-balance '>Our History</h1>

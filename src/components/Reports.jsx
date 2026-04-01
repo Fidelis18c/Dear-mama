@@ -35,7 +35,7 @@ const Reports = () => {
        <div>
         <img src={ReportImage2}
          alt="Report Image 2" 
-         className='w-full h-[60rem]'/>
+         className='w-full  h-auto max-h-[60vh] object-cover md:h-[60rem] '/>
        </div>
 
 
