@@ -7,7 +7,7 @@ import childImage from '../assets/Children.jpeg';
 
 const LatestEvents = () => {
   return (
-    <>
+    <div className='flex flex-col bg-customPink md:bg-transparent'>
       {/* EVENTS */}
               <div>
                    <h1 className='pt-4 text-2xl font-Montserrat Alternates text-center font-semibold'> EVENTS </h1>
@@ -63,7 +63,7 @@ const LatestEvents = () => {
                alt="Report Image 2" 
                className='h-auto w-full md:h-[50rem]   object-cover '/>
              </div>
-    </>
+    </div>
   )
 }
 
