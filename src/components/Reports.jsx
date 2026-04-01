@@ -7,7 +7,7 @@ import reportPDF from '../assets/RIPOTI YA DEAR MAMA FOUNDATION-1.pdf'
 
 const Reports = () => {
   return (
-    <div className='flex flex-col bg-customPink md:bg-transparent'>
+    <div className='flex flex-col min-h-screen bg-customPink md:bg-transparent'>
 
     <div>
         <h1 className='pt-4 text-2xl font-Montserrat Alternates text-center font-semibold'> REPORTS </h1>
