@@ -48,16 +48,16 @@ const WhatWeDo = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   className='flex flex-col md:flex-row gap-8 items-center md:py-10 overflow-hidden'
 >
-           <div className='grid  grid-flow-row items-center justify-center  rounded-lg bg-gray-200 m-3 mt-4  md:m-0 md:bg-transparent   md:grid md:grid-cols-2 md:gap-4 md:pl-0 md:pl-15  md:text-balance md:pt-0'>
+           <div className='grid  grid-flow-row items-center justify-center  rounded-lg bg-gray-200 m-5 mt-4  md:m-0 md:bg-transparent   md:grid md:grid-cols-2 md:gap-4 md:pl-0 md:pl-15  md:text-balance md:pt-0'>
         
             <div>
                    <img src={womanImage11} 
                    alt="Task1"
-                   className=' w-[25rem] h-[20rem] pb-4  md:rounded-lg object-cover md:object-cover md:h-[25rem] md:w-[37rem] md:pl-[3rem] md:ml-0 ' />
+                   className=' w-[25rem] h-[20rem] pb-4 rounded-lg  md:rounded-lg object-cover md:object-cover md:h-[25rem] md:w-[37rem] md:pl-[3rem] md:ml-0 ' />
                </div>
 
                <div className='md:max-w-none max-w-92' >
-                    <h1 id='Empowering'  className=' pl-[1rem] pb-3 leading-4 text-center scroll-mt-24 transition-all duration-700 font- text-xl text-black-500 md:text-2xl md:text-left  font-semibold md:pb-3 md:pt-2 md:pl-0 '>Empowering future generation.</h1>
+                    <h1 id='Empowering'  className=' pl-[1rem] pb-3 pt-3 leading-4 text-center scroll-mt-24 transition-all duration-700 font- text-xl text-black-500 md:text-2xl md:text-left  font-semibold md:pb-3 md:pt-2 md:pl-0 '>Empowering future generation.</h1>
 
                      <p className=' text-md  pl-4  font-light leading-6 md:text-[16px] md:text-left md:leading-6 pb-2 md:pl-0 font-montserrat md:text-balance  '>We believe that every child deserves a future unburdened by poverty.
                       Our dedicated youth network works actively to ensure that orphans and children from impoverished backgrounds receive more than just basic aid;
@@ -84,7 +84,7 @@ const WhatWeDo = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   
 >
-           <div className='grid  grid-flow-row items-center justify-center rounded-lg m-3  mt-2 md:grid md:grid-cols-2 md:gap-6 md:p-10  bg-purple-700 text-white md:text-balance overflow-hidden md:m-0'>
+           <div className='grid  grid-flow-row items-center justify-center rounded-lg m-5  mt-6 md:grid md:grid-cols-2 md:gap-6 md:p-10  bg-purple-700 text-white md:text-balance overflow-hidden md:m-0'>
 
      
             
@@ -105,7 +105,7 @@ const WhatWeDo = () => {
              <div>
                    <img src={HospitalImage} 
                    alt="Task2"
-                   className='w-[25rem] h-[22rem]  rounded-lg md:pt-3  pt-2 object-cover  md:rounded-lg md:h-[28rem] md:w-[35rem] md:object-cover' />
+                   className='w-[25rem] h-[22rem]  rounded-lg md:pt-3  pt-5 object-cover  md:rounded-lg md:h-[28rem] md:w-[35rem] md:object-cover' />
                </div>
   
            </div>    
@@ -121,7 +121,7 @@ const WhatWeDo = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   className='flex flex-col md:flex-row gap-8 items-center py-3 md:py-10 overflow-hidden'
 >
-           <div className='grid  grid-flow-row items-center justify-center rounded-lg m-3  bg-gray-200   md:grid md:grid-cols-2 md:gap-4 md:p-10 md:pt-0 md:text-balance md:bg-transparent md:m-0'>
+           <div className='grid  grid-flow-row items-center justify-center rounded-lg m-5  bg-gray-200   md:grid md:grid-cols-2 md:gap-4 md:p-10 md:pt-0 md:text-balance md:bg-transparent md:m-0'>
 
 
                <div>
