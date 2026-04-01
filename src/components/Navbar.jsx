@@ -4,6 +4,7 @@ import DearMama from '../assets/DearMama.png'
 import DearMamaImage from '../assets/DearMama2.png'
 import { FaChevronDown} from 'react-icons/fa'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
 
 
@@ -32,7 +33,7 @@ const Navbar = () => {
 
   const handleReportToggle = () => {
   setReportDropdownOpen(!reportDropdownOpen);
-  setAboutUsDropdownOpen(false); // Close the other dropdown if it's open
+  setAboutusDropdownOpen(false); // Close the other dropdown if it's open
  };
 
 
@@ -63,7 +64,7 @@ const Navbar = () => {
 
 {/* About Us hamburger menu */}
       {isMenuOpen && (
-        <div className='absolute top-[4rem] left-0 w-full bg-white shadow-lg z-50 flex flex-col items-center gap-2 py-3'>
+        <div className='absolute  top-[4rem] left-0 w-full bg-white shadow-lg z-50 flex flex-col items-center gap-2 py-3'>
           
           <div className='flex items-center justify-center pb-2 gap-1 w-full border-b-2 border-customPink 'onClick={handleAboutusToggle}>
              <span to="" className='' >About Us</span>
@@ -71,20 +72,23 @@ const Navbar = () => {
                                   
               </div>
 
+          
+
              {AboutusDropdownOpen && (
-        <div className="flex flex-col px-8 pb-3 ml-3 gap-1 text-sm h-[3rem] bg-white font-semibold text-gray-600"> 
-          <Link to="/history" className='hover:text-purple-700 space-y-4'
-           onClick={() => {setAboutusDropdownOpen(false); setIsMenuOpen(false);}}
-           >
-            Our History
-          </Link>
+              <div className="flex flex-row px-8 pb-3 ml-3 gap-4 text-sm h-[2rem] z-20 bg-white font-bold text-gray-600"> 
+                <Link to="/history" className='hover:text-purple-700 space-y-4'
+                  onClick={() => {setAboutusDropdownOpen(false); setIsMenuOpen(false);}}
+                    >
+                     Our History
+                      </Link>
 
-          <Link to="/leadership" className='hover:text-purple-700'  onClick={() => {setAboutusDropdownOpen(false); setIsMenuOpen(false);}}>
-            Our Leadership
-          </Link>
+                      <Link to="/leadership" className='hover:text-purple-700'  onClick={() => {setAboutusDropdownOpen(false); setIsMenuOpen(false);}}>
+                      Our Leadership
+                      </Link>
 
-       </div>
-      )}
+          </div>
+        )}
+         
          
 
           {/* What We Do hamburger menu */}
@@ -100,7 +104,7 @@ const Navbar = () => {
           </div>
            
           {reportDropdownOpen && (
-             <div className="flex flex-col px-8 pb-3  ml-3 gap-1 text-sm h-[3rem] bg-white font-semibold text-gray-600">
+             <div className="flex flex-row px-8 pb-3  ml-3 gap-4 text-sm h-[2rem] bg-white font-bold text-gray-600">
                 <Link to="/latestevents"  onClick={() => {setReportDropdownOpen(false); setIsMenuOpen(false);}}
                 >Latest Events
                 </Link>
@@ -196,7 +200,7 @@ const Navbar = () => {
                 {/* Centered Container matching your About Us style */}
                    <div className="max-w-7xl mx-auto h-full flex flex-col justify-center items-start px-20">
         
-                     <div className="flex flex-col space-y-4 pl-[43rem]">
+                     <div className="flex flex-col space-y-4 pl-[44rem]">
                        <Link  to="/latestevents" 
                          className="text-1xl font-bold text-gray-800 hover:text-purple-700 transition-colors"
                           onClick={() => setReportDropdownOpen(false)}
