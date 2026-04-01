@@ -3,10 +3,10 @@ import OurHistoryImage from '../assets/History.png'
 
 const History = () => {
   return (
-    <div className='md:flex md:flex-row items-center gap-10 min-h-screen font-Montserrat' >
+    <div className='md:flex md:flex-row items-center font-light text-md  font-Montserrat' >
          <div className='md:p-20 pl-5 md:pl-12 md:w-[50rem] md:pb-10 break-normal font-Montserrat'> 
           
-              <h1 className='pt-10 pb-3   md:pt-0 md:text-left text-2xl md:text-2xl md:pb-3 md:pl-0 text-balance '>Our History</h1>
+              <h1 className='pt-10 pb-3   md:pt-0 md:text-left text-2xl md:text-2xl font-semibold md:pb-3 md:pl-0 text-balance '>Our History</h1>
       
               <p className=''>The Dear Mama Charity Foundation was not born in a boardroom, but from a simple, personal tradition of gratitude.
                    Initially, it began as the solitary effort of a single individual who regularly visited a local orphans' center.

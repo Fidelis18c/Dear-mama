@@ -152,7 +152,7 @@ const HeroSection = () => {
                </div>
               <div>
                <h2 className=' pt-1 text-xl md:text-[20px]  text-black font-bold  text-center font-montserrat md:text-wrap md:pt-2'>Empowering future <br />generation.</h2>
-                <p className=' ml-[1rem] max-w-80 text-sm text-balance font-light  text-center md:text-balance  md:ml-[2rem] md:max-w-xs md:text-black md:text-left md:text-sm md:pt-5 md:pl-6 md:pr-1'>We ensure orphans and children from
+                <p className=' ml-[1rem] max-w-80 text-md text-balance font-light  text-center md:text-balance  md:ml-[2rem] md:max-w-xs md:text-black md:text-left md:text-sm md:pt-5 md:pl-6 md:pr-1'>We ensure orphans and children from
                 impoverished backgrounds receive vital support, focusing on access to education, 
                 nutrition, and mentorship.</p>
               </div>
@@ -181,7 +181,7 @@ const HeroSection = () => {
             </div>
              <div>
                <h2 className='pt-1 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Holistic Community <br /> Well-being.</h2>
-                <p className='max-w-sm ml-7 pt-2 text-black md:text-balance font-light text-left text-sm md:pt-2 pl-4 md:ml-7 pr-5 '>Our volunteers provide 100% support to patients in hospitals, 
+                <p className='max-w-sm ml-7 pt-2 text-black md:text-balance font-light text-left text-md md:pt-2 pl-4 md:ml-7 pr-5 '>Our volunteers provide 100% support to patients in hospitals, 
                the elderly, and prisoners. This includes providing basic necessities, financial assistance for treatment,
                and crucial advisory and emotional support to foster dignity and hope during difficult times.</p>
             </div>
@@ -210,7 +210,7 @@ const HeroSection = () => {
           </div>
            <div>
              <h2 className='pt-1 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Rapid Crisis Response</h2>
-             <p className='max-w-sm pt-2 text-black text-left md:text-balance font-light md:ml-3 text-sm md:pt-3 pl-6 pr-2'>We mobilize swiftly to address unexpected community emergencies and natural disasters,
+             <p className='max-w-sm pt-2 text-black text-left md:text-balance font-light md:ml-3 text-md md:pt-3 pl-6 pr-2'>We mobilize swiftly to address unexpected community emergencies and natural disasters,
              such as floods or severe food shortages. 
               Our youth network ensures immediate material aid and relief reaches affected communities rapidly when they need it most.</p>
            </div>
