@@ -39,7 +39,7 @@ const GetInvolved = () => {
             <div className='md:hidden'>
               <img src={ReportImage2}
                alt="Report Image 2" 
-               className='w-full md:h-[50rem]  h-auto max-h-[60vh]  object-cover'/>
+               className='w-full md:h-[50rem]  h-auto   object-cover'/>
             </div>
               
         
