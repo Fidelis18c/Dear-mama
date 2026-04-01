@@ -59,12 +59,12 @@ const WhatWeDo = () => {
                <div className='md:max-w-none max-w-92' >
                     <h1 id='Empowering'  className=' pl-[1rem] pb-3 leading-4 text-center scroll-mt-24 transition-all duration-700 font- text-xl text-black-500 md:text-2xl md:text-left  font-semibold md:pb-3 md:pt-2 md:pl-0 '>Empowering future generation.</h1>
 
-                     <p className=' text-sm  pl-4  font-light leading-5 md:text-[16px] md:text-left md:leading-6 pb-2 md:pl-0 font-montserrat md:text-balance  '>We believe that every child deserves a future unburdened by poverty.
+                     <p className=' text-md  pl-4  font-light leading-6 md:text-[16px] md:text-left md:leading-6 pb-2 md:pl-0 font-montserrat md:text-balance  '>We believe that every child deserves a future unburdened by poverty.
                       Our dedicated youth network works actively to ensure that orphans and children from impoverished backgrounds receive more than just basic aid;
                       they receive a pathway to success. 
                       We provide comprehensive, sustained support focused on breaking cycles of hardship.</p>
 
-                      <p className='text-sm pl-4 pb-5 md:pb-0 font-light leading-5 text-balance font-montserrat md:text-[16px] md:text-left md:pl-0 md:leading-6'>This involves securing access to quality education by covering school fees 
+                      <p className='text-md pl-4 pb-5 md:pb-0 font-light leading-6 text-balance font-montserrat md:text-[16px] md:text-left md:pl-0 md:leading-6'>This involves securing access to quality education by covering school fees 
                        and providing necessary learning materials. Simultaneously, we guarantee consistent nutrition to support healthy development,
                        alongside personalized mentorship programs run by our older youth members, fostering resilience, confidence, and leadership skills. 
                        Our investment in these children is an investment in the future of Tanzania.</p>
@@ -90,14 +90,14 @@ const WhatWeDo = () => {
             
 
                <div className='' >
-                    <h1 id='Well-being' className='pl-[1rem] scroll-mt-24 transition-all duration-700 font-montserrat text-center text-xl text-black-500  md:text-2xl md:text-left  font-semibold pb-3 pt-3 md:pl-0'>Holistic Community Well-being.</h1>
+                    <h1 id='Well-being' className='pl-[1rem] scroll-mt-24 transition-all duration-700 font-montserrat text-center text-xl text-black-500  md:text-2xl md:text-left  font-semibold pb-3 pt-6 md:pl-0'>Holistic Community Well-being.</h1>
 
-                     <p className='text-sm pl-4 pb-4  text-balance font-light leading-5 md:text-[16px] md:leading-6 font-montserrat md:pl-0 '>The Dear Mama Charity Foundation is dedicated to serving those who are often isolated or overlooked, 
+                     <p className='text-md pl-4 pb-4  text-balance font-light leading-6 md:text-[16px] md:leading-6 font-montserrat md:pl-0 '>The Dear Mama Charity Foundation is dedicated to serving those who are often isolated or overlooked, 
                       ensuring they maintain their dignity during difficult times. This pillar focuses on delivering comprehensive care packages that address physical,
                        financial, and emotional needs for patients in hospitals,
                        the elderly, and incarcerated individuals.</p>
 
-                      <p className='text-sm pl-4   text-balance font-light leading-5 font-montserrat md:text-[16px] md:leading-6 md:pl-0'>Our program structure includes delivering basic necessities like food, 
+                      <p className='text-md pl-4   text-balance font-light leading-6 font-montserrat md:text-[16px] md:leading-6 md:pl-0'>Our program structure includes delivering basic necessities like food, 
                         hygiene items, and blankets directly to those in need. Furthermore, we actively seek opportunities to provide financial assistance for medical procedures or rehabilitation resources. 
                        By combining material aid with personalized advisory support, we are ensuring the well-being and successful reintegration of these special groups back into the community.</p>
                </div>
@@ -125,13 +125,13 @@ const WhatWeDo = () => {
 
 
                <div>
-                    <h1 id='Rapid' className=' pl-[1rem] pr-[4rem] scroll-mt-24 transition-all duration-700 text-center md:text-left font-montserrat text-xl text-black-500 md:text-2xl font-semibold pb-3 pt-2 md:pl-0 md:pr-0 '>Rapid Crisis Response.</h1>
+                    <h1 id='Rapid' className=' pl-[1rem] pr-[4rem] scroll-mt-24 transition-all duration-700 text-center md:text-left font-montserrat text-xl text-black-500 md:text-2xl font-semibold pb-3 pt-6 md:pl-0 md:pr-0 '>Rapid Crisis Response.</h1>
 
-                     <p className='text-md  pl-4 pb-2 font-light text-balance leading-5 font-montserrat md:text-[16px] md:leading-6 md:pl-0 '>The instability of unexpected events—be they natural calamities or sudden large-scale needs requires a reliable and compassionate response.
+                     <p className='text-md  pl-4 pb-2 font-light text-balance leading-6 font-montserrat md:text-[16px] md:leading-6 md:pl-0 '>The instability of unexpected events—be they natural calamities or sudden large-scale needs requires a reliable and compassionate response.
                        Our foundation stands as a pillar of hope, committed to 
                        mitigating suffering and restoring stability within impacted communities.</p>
 
-                      <p className='text-md pl-3 pb-4 font-light text-balance leading-5 font-montserrat md:text-[16px] md:leading-6 md:pl-0'>We focus on assisting families with initial recovery steps, helping them bridge the gap between disaster and eventual stability.
+                      <p className='text-md pl-3 pb-4 font-light text-balance leading-6 font-montserrat md:text-[16px] md:leading-6 md:pl-0'>We focus on assisting families with initial recovery steps, helping them bridge the gap between disaster and eventual stability.
                          Our readiness showcases our commitment to being there for Tanzanians during the most unpredictable moments.</p>
                </div>
         
