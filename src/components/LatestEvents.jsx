@@ -19,7 +19,7 @@ const LatestEvents = () => {
       
       
              <div className='p-10 md:flex md:flex-row items-center gap-10'>
-               <div className='max-w-80 bg-customPink rounded-xl overflow-hidden shadow-md ml-[2rem] pb-[3rem]'>
+               <div className='max-w-80 bg-customPink rounded-xl overflow-hidden shadow-md ml-[1rem] pb-[3rem]'>
                 <div>
                   <img src={HospitalImage} 
                   alt="Report Image"
@@ -37,7 +37,7 @@ const LatestEvents = () => {
       
              </div>
       
-          <div className='max-w-80 mt-[2rem] bg-customPink rounded-xl overflow-hidden shadow-md ml-[2rem] pb-[3rem] md:mt-0'>
+          <div className='max-w-80 mt-[2rem] bg-customPink rounded-xl overflow-hidden shadow-md ml-[1rem] pb-[3rem] md:mt-0'>
                 <div>
                   <img src={childImage} 
                   alt="Report Image"

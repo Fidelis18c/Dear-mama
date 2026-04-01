@@ -14,7 +14,7 @@ const Reports = () => {
     </div>
 
     <div className='p-10 '>
-       <div className='max-w-64 bg-customPink rounded-xl overflow-hidden shadow-md ml-[2rem] pb-[2rem]'>
+       <div className='max-w-64 bg-customPink rounded-xl overflow-hidden shadow-md ml-[1rem] pb-[2rem]'>
           <div>
             <img src={AnnualImage} 
             alt="Report Image"
