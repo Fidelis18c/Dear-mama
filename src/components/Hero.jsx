@@ -110,7 +110,7 @@ const HeroSection = () => {
             </h1>
 
             
-            <p className='absolute top-[5rem] md:flex  md:text-3xl md:absolute md:top-[12rem] font-semibold  md:mb-8'>
+            <p className='absolute top-[5rem] md:flex  md:text-3xl md:absolute md:top-[8rem] font-semibold  md:mb-8'>
                 Giving help to those <br /> who needs it.
             </p>
 
