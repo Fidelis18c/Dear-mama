@@ -60,7 +60,7 @@ const Leadership = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className='flex flex-col items-center gap-10 md:grid md:ml-[9rem] md:grid-cols-2 md:p-10 md:max-w-7xl md:mx-auto'
+                        className='flex flex-col pt-10 items-center gap-10 md:grid md:ml-[9rem] md:grid-cols-2 md:p-10 md:max-w-7xl md:mx-auto'
                     >
                         <div className='relative w-full max-w-[20rem]'>
                             <img src={MariamImage} alt="Mariam" 

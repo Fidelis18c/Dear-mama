@@ -144,7 +144,7 @@ const HeroSection = () => {
       
     >
       
-         <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-8 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
+         <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-7 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
               <div>
                 <img src={HeroImage8} 
                   alt=" Impact One"
@@ -173,7 +173,7 @@ const HeroSection = () => {
       transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
       
     >
-         <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-8 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
+         <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-7 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
             <div>
               <img src={HospitalImage} 
                alt=" Impact One"
@@ -201,7 +201,7 @@ const HeroSection = () => {
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-        <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-8 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
+        <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-7 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
           <div>
              <img src={womanImage2} 
              alt=" Impact One"

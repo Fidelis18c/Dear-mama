@@ -10,7 +10,7 @@ const Reports = () => {
     <div className='flex flex-col  bg-customPink md:bg-transparent'>
 
     <div>
-        <h1 className='pt-4 text-2xl font-Montserrat Alternates text-center font-semibold'> REPORTS </h1>
+        <h1 className='pt-4 text-2xl font-montserrat text-center font-semibold'> REPORTS </h1>
     </div>
 
     <div className='p-5 '>
