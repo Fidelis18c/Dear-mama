@@ -144,22 +144,22 @@ const HeroSection = () => {
       
     >
       
-         <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-5 mr-5 mb-10 bg-gray-200  md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:ml-[4rem] md:pb-[2rem]'>
+         <div className='flex flex-col pb-4 items-center justify-center rounded-lg mx-5 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
               <div>
                 <img src={HeroImage8} 
                   alt=" Impact One"
-                  className='w-[25rem] h-[21rem] rounded-lg md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden md:scale-100'  /> 
+                  className='w-[22rem] h-[21rem] rounded-t-lg md:rounded-none md:w-[20rem]  md:h-[250px] md:object-cover'  /> 
                </div>
-              <div>
-               <h2 className=' pt-1 text-xl md:text-[20px]  text-black font-bold  text-center font-montserrat md:text-wrap md:pt-2'>Empowering future <br />generation.</h2>
-                <p className=' ml-[1rem] max-w-80 text-md text-balance font-light  text-center md:text-balance  md:ml-[2rem] md:max-w-xs md:text-black md:text-left md:text-sm md:pt-5 md:pl-6 md:pr-1'>We ensure orphans and children from
+              <div className='px-4'>
+               <h2 className=' pt-3 text-xl md:text-[20px]  text-black font-bold  text-center font-montserrat md:pt-2'>Empowering future <br />generation.</h2>
+                <p className=' text-sm font-light text-center md:text-left md:pt-5'>We ensure orphans and children from
                 impoverished backgrounds receive vital support, focusing on access to education, 
                 nutrition, and mentorship.</p>
               </div>
 
-             <div className='  mt-[2rem] ml-[12rem]    text-xs mr-[1rem]  py-2 px-3  md:text-right md:pr-4 rounded-full md:mt-[3rem] md:ml-[10rem] md:mr-[1rem] md:py-2 bg-purple-500 text-white  md:hover:bg-purple-700'>
-              <button onClick={() => goToImport('Empowering')} className=''>Read More</button>
-              <FaArrowRight className='inline-block ml-1' />
+             <div className='mt-6 self-end mr-6 py-2 px-4 text-xs rounded-full bg-purple-500 text-white hover:bg-purple-700 flex items-center gap-2'>
+              <button onClick={() => goToImport('Empowering')}>Read More</button>
+              <FaArrowRight />
              </div>
            </div>
         </motion.div>
@@ -173,21 +173,20 @@ const HeroSection = () => {
       transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
       
     >
-         <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-4 mr-3 mb-10 bg-gray-200  md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
+         <div className='flex flex-col pb-4 items-center justify-center rounded-lg mx-5 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
             <div>
               <img src={HospitalImage} 
                alt=" Impact One"
-               className='w-[25rem] h-[24rem] rounded-lg md:w-[20rem] md:h-[250px] md:object-cover md:overflow-x-hidden md:overflow-y-hidden' /> 
+               className='w-[22rem] h-[24rem] rounded-t-lg md:rounded-none md:w-[20rem]  md:h-[250px] md:object-cover' /> 
             </div>
-             <div>
-               <h2 className='pt-1 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Holistic Community <br /> Well-being.</h2>
-                <p className='max-w-sm ml-7 pt-2 text-black md:text-balance font-light text-left text-md md:pt-2 pl-4 md:ml-7 pr-5 '>Our volunteers provide 100% support to patients in hospitals, 
-               the elderly, and prisoners. This includes providing basic necessities, financial assistance for treatment,
-               and crucial advisory and emotional support to foster dignity and hope during difficult times.</p>
+             <div className='px-4'>
+               <h2 className='pt-3 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:pt-2'>Holistic Community <br /> Well-being.</h2>
+                <p className='text-sm font-light text-center md:text-left md:pt-4'>Our volunteers provide 100% support to patients in hospitals, 
+               the elderly, and prisoners. This includes basic necessities, financial assistance, and crucial advisory/emotional support.</p>
             </div>
-            <div className='ml-[12rem] text-right pr-4  border-2 rounded-full mt-[3rem] px-3  py-2 text-xs md:text-right md:pr-4 md:mr-[1rem] md:ml-[10rem] md:mt-[2rem] bg-purple-500 text-white hover:bg-purple-700 '>
-               <button onClick={() => goToImport('Well-being')} className=''>Read More</button>
-               <FaArrowRight className='inline-block ml-1' />
+            <div className='mt-6 self-end mr-6 py-2 px-4 text-xs rounded-full bg-purple-500 text-white hover:bg-purple-700 flex items-center gap-2'>
+               <button onClick={() => goToImport('Well-being')}>Read More</button>
+               <FaArrowRight />
            </div>
         </div>
   </motion.div>
@@ -202,21 +201,19 @@ const HeroSection = () => {
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-        <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-4 mr-3 mb-5  bg-gray-200 md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:mr-[4rem] md:pb-[2rem]'>
+        <div className='flex flex-col pb-4 items-center justify-center rounded-lg mx-5 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
           <div>
              <img src={womanImage2} 
              alt=" Impact One"
-             className='w-[25rem] h-[24rem] md:w-[20rem] rounded-lg md:h-[250px] md:overflow-x-hidden  md:object-cover md:overflow-y-hidden md:scale-100' /> 
+             className='w-[22rem] h-[24rem] rounded-t-lg md:rounded-none md:w-[20rem]  md:h-[250px] md:object-cover' /> 
           </div>
-           <div >
-             <h2 className='pt-1 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:text-wrap md:pt-2'>Rapid Crisis Response</h2>
-             <p className='max-w-sm pt-2 text-black text-left md:text-balance  md:leading-none font-light md:ml-3 text-md md:pt-3 pl-6 pr-2'>We mobilize swiftly to address unexpected community emergencies and natural disasters,
-             such as floods or severe food shortages. 
-              Our youth network ensures immediate material aid and relief reaches affected communities rapidly when they need it most.</p>
+           <div className='px-4'>
+             <h2 className='pt-3 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:pt-2'>Rapid Crisis Response</h2>
+             <p className='text-sm font-light text-center md:text-left md:pt-4'>We mobilize swiftly to address unexpected emergencies and natural disasters, ensuring immediate material aid reaches affected communities rapidly.</p>
            </div>
-          <div className=' ml-[12rem] text-right  px-3  py-2 text-xs  pr-4 border-2 rounded-full mt-[3rem] md:ml-[10rem] mr-[1rem]  bg-purple-500 text-white hover:bg-purple-700 '>
-            <button onClick={() => goToImport('Rapid')} className=''>Read More</button>
-            <FaArrowRight className='inline-block ml-2' />
+          <div className='mt-6 self-end mr-6 py-2 px-4 text-xs rounded-full bg-purple-500 text-white hover:bg-purple-700 flex items-center gap-2'>
+            <button onClick={() => goToImport('Rapid')}>Read More</button>
+            <FaArrowRight />
           </div>
          
         </div>

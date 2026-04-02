@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <>
 
-    <div className='w-full md:w-full  md:flex md:items-center md:justify-between bg-customPink overflow-hidden md:overflow-hidden'>
+    <div className='w-full max-w-full   md:flex md:items-center md:justify-between bg-customPink  overflow-x-hidden'>
        <div className='flex items-center gap-1 pt-4 pb-3 bg-no-repeat bg-cover bg-center '>
         <Link to="/"> <img src={DearMamaImage} 
            alt="Dear Mama Foundation"
@@ -56,7 +56,7 @@ const Navbar = () => {
      
      <div>
 
-      <div className='absolute z-20 top-[2rem] ml-[21rem]  right-4 md:hidden' onClick={toggleMenu}>
+      <div className='absolute z-20 top-[2rem] right-4 md:hidden' onClick={toggleMenu}>
         {isMenuOpen ? 
             <FaTimes size={20} /> : <FaBars size={20}
          />}

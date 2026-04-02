@@ -19,81 +19,90 @@ const Leadership = () => {
 
     {/* OUR LEADERHIP AND CORE VALUES SUBPAGE */}
 
-                <div className=''>
+            <div className='ml-5'>
                     <div className='pt-5 text-center text-2xl'>
                         <h1>OUR LEADERSHIP</h1>
                     </div>
 
-                    <div  className='justify-center items-center md:grid md:grid-cols-2 md:p-10 md:pl-[15rem] md:justify-center md:items-center relative'>
-                        <div className='relative md:mb-0 mb-[3rem] md:mt-0 mt-[2rem] left-11 md:left-0'>
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className='flex flex-col items-center md:ml-[9rem] gap-10 md:grid md:grid-cols-2 md:p-10 md:max-w-7xl md:mx-auto relative'
+                    >
+                        <div className='relative w-full max-w-[20rem]'>
                             <img src={HamzaImage} alt="Hamza"
-                             className='  w-[20rem] rounded-lg'
+                             className='w-full rounded-lg h-auto aspect-[4/5] object-cover'
                             />
 
-                               <div className='justify-center absolute bottom-0 text-white text-center  z-10  bg-black/60  pl-20 pr-[9.1rem] '>
-                                 <h1>HAMZA SAID</h1>
-                                 <h2>Mwenyekiti</h2>
-                    
+                               <div className='absolute bottom-0 left-0 right-0 text-white text-center z-10 bg-black/60 py-2 rounded-b-lg'>
+                                 <h1 className='font-bold'>HAMZA SAID</h1>
+                                 <h2 className='text-sm'>Mwenyekiti</h2>
                                </div>  
-                          
                         </div>
                        
 
-                         <div className='relative md:mb-0 mb-[3rem] left-8 md:left-0'>
+                         <div className='relative w-full max-w-[20rem]'>
                             <img src={EmmaImage} alt="Emma"
-                             className='w-[20rem] rounded-lg '
+                             className='w-full rounded-lg h-auto aspect-[4/5] object-cover'
                             />
 
-        
-                               <div className='absolute bottom-0 text-white text-center z-10  bg-black/60  pl-20 pr-[2.1rem] '>
-                                 <h1>EMMAGLADNES MBUNGALO</h1>
-                                 <h2>Mwenyekiti Msaidizi</h2>             
+                               <div className='absolute bottom-0 left-0 right-0 text-white text-center z-10 bg-black/60 py-2 rounded-b-lg'>
+                                 <h1 className='font-bold'>EMMAGLADNES MBUNGALO</h1>
+                                 <h2 className='text-sm'>Mwenyekiti Msaidizi</h2>             
                                </div>  
                          </div>
+                    </motion.div>
 
-                    </div>
-
-                    <div className='text-center justify-center md:grid md:grid-cols-2 md:p-10 md:pl-[15rem] md:justify-center md:items-center md:text-center'>
-                        <div className='relative md:mb-0 mb-[3rem] left-8 md:left-0'>
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className='flex flex-col items-center gap-10 md:grid md:ml-[9rem] md:grid-cols-2 md:p-10 md:max-w-7xl md:mx-auto'
+                    >
+                        <div className='relative w-full max-w-[20rem]'>
                             <img src={MariamImage} alt="Mariam" 
-                             className='w-[20rem] rounded-lg '
+                             className='w-full rounded-lg h-auto aspect-[4/5] object-cover'
                             />
 
-                              <div className='absolute  bottom-0 text-white text-center justify-center z-10  bg-black/60  pl-20  pr-[8.7rem] '>
-                                 <h1 className=''>MARIAM SAID</h1>
-                                 <h2>Katibu Mkuu</h2>             
+                              <div className='absolute bottom-0 left-0 right-0 text-white text-center z-10 bg-black/60 py-2 rounded-b-lg'>
+                                 <h1 className='font-bold'>MARIAM SAID</h1>
+                                 <h2 className='text-sm'>Katibu Mkuu</h2>             
                                </div>  
                         </div>
 
-                        <div className='relative md:mb-0 mb-[3rem] left-8 md:left-0'>
+                        <div className='relative w-full max-w-[20rem]'>
                             <img src={JonaImage} alt="Jona" 
-                             className='w-[20rem] rounded-lg '
+                             className='w-full rounded-lg h-auto aspect-[4/5] object-cover'
                             />
 
-                              <div className='absolute bottom-0 text-white text-center z-10  bg-black/60  pl-20 pr-[6.5rem] '>
-                                 <h1>JONATHAN MGETA</h1>
-                                 <h2>Katibu Msaidizi</h2>             
+                              <div className='absolute bottom-0 left-0 right-0 text-white text-center z-10 bg-black/60 py-2 rounded-b-lg'>
+                                 <h1 className='font-bold'>JONATHAN MGETA</h1>
+                                 <h2 className='text-sm'>Katibu Msaidizi</h2>             
                                </div>  
                         </div>
+                    </motion.div>
 
-                    </div>
-
-
-
-                    <div className='flex items-center justify-center pb-10 '>   
-                           <div className='relative '>
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                        className='flex items-center justify-center py-10'
+                    >   
+                           <div className='relative w-full max-w-[20rem]'>
                             <img src={StanImage} alt="Stan" 
-                            className='w-[20rem] rounded-lg  ' 
+                              className='w-full rounded-lg h-auto aspect-[4/5] object-cover' 
                            />    
-                       
 
-                           <div className='absolute bottom-0 text-white text-center z-10  bg-black/60  pl-20 pr-[4.3rem] '>
-                                 <h1>STANSLAUS KITANDALA</h1>
-                                 <h2>Mhazini</h2>
-                    
+                           <div className='absolute bottom-0 left-0 right-0 text-white text-center z-10 bg-black/60 py-2 rounded-b-lg'>
+                                 <h1 className='font-bold'>STANSLAUS KITANDALA</h1>
+                                 <h2 className='text-sm'>Mhazini</h2>
                             </div>  
-                             </div>  
-                    </div>
+                           </div>  
+                    </motion.div>
                 </div>
 
 
