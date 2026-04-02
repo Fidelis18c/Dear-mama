@@ -144,11 +144,11 @@ const HeroSection = () => {
       
     >
       
-         <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-5 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
+         <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-8 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
               <div>
                 <img src={HeroImage8} 
                   alt=" Impact One"
-                  className='w-[22rem] h-[21rem] rounded-t-lg md:rounded-none md:w-[20rem]  md:h-[250px] md:object-cover'  /> 
+                  className='w-[21rem] h-[21rem] rounded-t-lg md:rounded-none md:w-[20rem]  md:h-[250px] md:object-cover'  /> 
                </div>
               <div className='px-4'>
                <h2 className=' pt-3 text-xl md:text-[20px]  text-black font-bold  text-center font-montserrat md:pt-2'>Empowering future <br />generation.</h2>
@@ -173,11 +173,11 @@ const HeroSection = () => {
       transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
       
     >
-         <div className='flex flex-col pb-4 items-center justify-center rounded-lg mx-5 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
+         <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-8 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
             <div>
               <img src={HospitalImage} 
                alt=" Impact One"
-               className='w-[22rem] h-[24rem] rounded-t-lg md:rounded-none md:w-[20rem]  md:h-[250px] md:object-cover' /> 
+               className='w-[21rem] h-[24rem] rounded-t-lg md:rounded-none md:w-[20rem]  md:h-[250px] md:object-cover' /> 
             </div>
              <div className='px-4'>
                <h2 className='pt-3 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:pt-2'>Holistic Community <br /> Well-being.</h2>
@@ -201,11 +201,11 @@ const HeroSection = () => {
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-        <div className='flex flex-col pb-4 items-center justify-center rounded-lg mx-5 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
+        <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-8 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
           <div>
              <img src={womanImage2} 
              alt=" Impact One"
-             className='w-[22rem] h-[24rem] rounded-t-lg md:rounded-none md:w-[20rem]  md:h-[250px] md:object-cover' /> 
+             className='w-[21rem] h-[24rem] rounded-t-lg md:rounded-none md:w-[20rem]  md:h-[250px] md:object-cover' /> 
           </div>
            <div className='px-4'>
              <h2 className='pt-3 text-xl md:text-[17px] text-black font-bold text-center font-montserrat md:pt-2'>Rapid Crisis Response</h2>
