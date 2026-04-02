@@ -144,7 +144,7 @@ const HeroSection = () => {
       
     >
       
-         <div className='flex flex-col pb-4 items-center justify-center rounded-lg mx-5 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
+         <div className='flex flex-col pb-4 items-center justify-center rounded-lg ml-5 mb-10 bg-gray-200 w-full max-w-[21rem] md:max-w-xs md:bg-gray-100 md:rounded-xl md:overflow-hidden md:shadow-md md:pb-[2rem]'>
               <div>
                 <img src={HeroImage8} 
                   alt=" Impact One"
