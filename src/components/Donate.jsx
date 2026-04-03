@@ -90,13 +90,13 @@ const Donate = ({ IsOpen, setIsOpen }) => {
             exit={{ scale: 0.7, opacity: 0, y: 50 }}
             transition={{ type: "spring", damping: 20, stiffness: 300 }}
             onClick={(e) => e.stopPropagation()}
-            className="bg-white w-[20rem] ml-[3rem]  mt-10 rounded-3xl md:mt-0 md:shadow-2xl md:max-w-2xl md:ml-0 md:w-full md:relative"
+            className="bg-white w-[20rem] ml-[3rem]  mt-[10rem] rounded-3xl md:mt-0 md:shadow-2xl md:max-w-2xl md:ml-0 md:w-full md:relative"
 
           >
             {/* Close button */}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute right-10 top-3 text-2xl md:right-6  md:top-4 md:text-3xl font-bold text-gray-400 hover:text-gray-800"
+              className="absolute right-10 top-[10rem] text-2xl md:right-6  md:top-4 md:text-3xl font-bold text-gray-400 hover:text-gray-800"
               aria-label="Close"
               type="button"
             >
