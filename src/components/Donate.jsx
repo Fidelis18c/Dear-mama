@@ -90,13 +90,13 @@ const Donate = ({ IsOpen, setIsOpen }) => {
             exit={{ scale: 0.7, opacity: 0, y: 50 }}
             transition={{ type: "spring", damping: 20, stiffness: 300 }}
             onClick={(e) => e.stopPropagation()}
-            className="bg-white w-[20rem] ml-[3rem] mt-[25rem] rounded-3xl md:mt-0 md:shadow-2xl md:max-w-2xl md:ml-0 md:w-full md:relative"
+            className="bg-white w-[20rem] ml-[2rem]  rounded-3xl md:mt-0 md:shadow-2xl md:max-w-2xl md:ml-0 md:w-full md:relative"
 
           >
             {/* Close button */}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute  top-4 right-6 md:text-3xl font-bold text-gray-400 hover:text-gray-800"
+              className="absolute right-11 top-3 text-2xl md:right-6  md:top-4 md:text-3xl font-bold text-gray-400 hover:text-gray-800"
               aria-label="Close"
               type="button"
             >
@@ -125,7 +125,7 @@ const Donate = ({ IsOpen, setIsOpen }) => {
               <div className="flex flex-col justify-center items-center ">
                 <div className="text-center">
                   <h2 className="text-md md:text-2xl">Donate to</h2>
-                  <h2 className="font-semibold text-xl md:text-3xl">
+                  <h2 className="font-semibold  md:text-3xl">
                     DEAR MAMA FOUNDATION
                   </h2>
                 </div>
@@ -170,7 +170,7 @@ const Donate = ({ IsOpen, setIsOpen }) => {
                   <input
                     type="text"
                     placeholder="255694007665"
-                    className="w-full p-3 border-2 rounded-xl outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full p-2 md:p-3 border-2 rounded-xl outline-none focus:ring-2 focus:ring-purple-500"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                   />
@@ -181,7 +181,7 @@ const Donate = ({ IsOpen, setIsOpen }) => {
                   <input
                     type="text"
                     placeholder="TSh 10,000"
-                    className="w-full p-3 border-2 rounded-xl outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full p-2 md:p-3 border-2 rounded-xl outline-none focus:ring-2 focus:ring-purple-500"
                     value={amount}
                     onChange={(e) => setAmount(e.target.value)}
                   />
@@ -191,7 +191,7 @@ const Donate = ({ IsOpen, setIsOpen }) => {
                 <button
                   type = "submit"
                   disabled ={loading}
-                  className="w-full max-w-md bg-purple-500 hover:bg-purple-700 text-white font-bold py-4 rounded-xl transition-colors shadow-lg mt-4 mb-2"
+                  className="w-full py-2 md:max-w-md bg-purple-500 hover:bg-purple-700 text-white font-bold md:py-4 rounded-xl transition-colors shadow-lg mt-4 mb-2"
                 >
                  {loading ? "Starting payment..." : "Donate via Mobile Money"}
                 </button>
