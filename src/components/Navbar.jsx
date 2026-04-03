@@ -230,7 +230,7 @@ const Navbar = () => {
         </div>
 
         <div className=" hidden md:flex  ">
-          <Link to="/getinvolved" className=' md:border-2 md:rounded-full md:px-3 md:py-2 md:bg-purple-500 md:text-white md:hover:bg-purple-700'>Get Involved</Link>
+          <Link to="/getinvolved" className=' md:border-2 md:rounded-full mr-4 md:px-3 md:py-2 md:bg-purple-500 md:text-white md:hover:bg-purple-700'>Get Involved</Link>
         </div>
 
       </div>
