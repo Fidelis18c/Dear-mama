@@ -29,11 +29,11 @@ const Leadership = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className='flex flex-col items-center md:ml-[9rem] gap-10 md:grid md:grid-cols-2 md:p-10 md:max-w-7xl md:mx-auto relative'
+                        className='flex flex-col items-center mr-[1rem] md:mr-0 md:ml-[9rem] gap-10 md:grid md:grid-cols-2 md:p-10 md:max-w-7xl md:mx-auto relative'
                     >
                         <div className='relative w-full max-w-[20rem]'>
                             <img src={HamzaImage} alt="Hamza"
-                             className='w-full rounded-lg h-auto aspect-[4/5] object-cover'
+                             className='w-full rounded-lg h-auto  md:mr-0 aspect-[4/5] object-cover'
                             />
 
                                <div className='absolute bottom-0 left-0 right-0 text-white text-center z-10 bg-black/60 py-2 rounded-b-lg'>
@@ -60,7 +60,7 @@ const Leadership = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className='flex flex-col pt-10 items-center gap-10 md:grid md:ml-[9rem] md:grid-cols-2 md:p-10 md:max-w-7xl md:mx-auto'
+                        className='flex flex-col pt-10 items-center mr-[1rem] md:mr-0 gap-10 md:grid md:ml-[9rem] md:grid-cols-2 md:p-10 md:max-w-7xl md:mx-auto'
                     >
                         <div className='relative w-full max-w-[20rem]'>
                             <img src={MariamImage} alt="Mariam" 
@@ -90,7 +90,7 @@ const Leadership = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className='flex items-center justify-center py-10'
+                        className='flex items-center mr-[1rem] md:mr-0 justify-center py-10'
                     >   
                            <div className='relative w-full max-w-[20rem]'>
                             <img src={StanImage} alt="Stan" 
