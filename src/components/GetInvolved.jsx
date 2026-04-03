@@ -36,7 +36,7 @@ const GetInvolved = () => {
 
       <Donate IsOpen={IsOpen} setIsOpen={setIsOpen} />
 
-            <div className='md:hidden'>
+            <div className='hidden md:hidden'>
               <img src={ReportImage2}
                alt="Report Image 2" 
                className='w-full md:h-[50rem]  h-auto   object-cover'/>
