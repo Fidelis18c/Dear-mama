@@ -81,7 +81,7 @@ const Donate = ({ IsOpen, setIsOpen }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[999] md:flex md:items-center md:justify-center md:p-4"
+          className="fixed inset-0 bg-black/70 mt-10 backdrop-blur-sm z-[999] md:flex md:items-center md:justify-center md:p-4"
         >
           <motion.div
             // Popup card
