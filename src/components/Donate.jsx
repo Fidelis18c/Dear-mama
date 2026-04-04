@@ -96,7 +96,7 @@ const Donate = ({ IsOpen, setIsOpen }) => {
             {/* Close button */}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute right-[4rem] top-[10rem] text-2xl md:right-6  md:top-4 md:text-3xl font-bold text-gray-400 hover:text-gray-800"
+              className="absolute right-[4rem] top-[9rem] text-2xl md:right-6  md:top-4 md:text-3xl font-bold text-gray-400 hover:text-gray-800"
               aria-label="Close"
               type="button"
             >
