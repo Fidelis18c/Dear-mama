@@ -1,8 +1,12 @@
 import React from 'react'
 import WHOimage from '../assets/WHO.png';
-import Task2image from '../assets/Task2.png';
 import ChildrensImage from '../assets/Childrens.png';
-import PrisonersImage from '../assets/Prisoners.png';   
+import GeneralImage from '../assets/General1.jpeg';
+import LeadersImage from '../assets/Leaders1.jpeg';
+import SisterImage from '../assets/Sister1.jpeg';
+import HeroImage from '../assets/Hero6.jpeg';
+import CakeImage from '../assets/Cake.jpeg';
+import ChildrenImage from '../assets/Childrens7.jpeg';
 import Mission from './Mission.jsx';
 import Values from './Values.jsx';
 import { motion } from 'framer-motion';
@@ -13,11 +17,11 @@ const WhoWeAre = () => {
     <>
       <div className='bg-customPink' >
         <div className='relative'>
-            <img src={WHOimage}
+            <img src={GeneralImage}
             alt=""
             className='w-full h-[29rem] md:w-full md:h-[34rem] object-cover flex-shrink-0' />
 
-            <div className='absolute inset-0 left-10 top-[19rem] md:top-[15rem] font-montserrat text-white'>
+            <div className='absolute inset-0 left-10 top-[19rem] md:top-[24rem] font-montserrat text-white'>
                 <h1 className='max-w-80 md:max-w-none text-3xl md:text-5xl font-bold  text-center'>More Than Foundation, We Are Family.</h1>
             </div>
 
@@ -46,7 +50,7 @@ const WhoWeAre = () => {
                  we are a community that welcomes anyone whose heart has been touched by our cause to join us in serving.</p>
          </div>
          <div>
-            <img src={Task2image}
+            <img src={LeadersImage}
              alt="Who2image" 
             className='w-[28rem] h-[20rem] md:w-[38rem] md:h-96 object-cover rounded-sm'/>
          </div>
@@ -84,7 +88,7 @@ const WhoWeAre = () => {
 
     >
       <div>
-        <img src={ChildrensImage} 
+        <img src={ChildrenImage} 
         alt="Childrens" 
         className='w-[12rem] h-[12rem] md:w-[20rem] md:h-[20rem] object-cover  rounded-full shadow-xl z-10 overflow-hidden border-4 border-whit'
         />
@@ -98,7 +102,7 @@ const WhoWeAre = () => {
       viewport={{ once: true, amount: 0.2 }}   
     >
       <div>
-        <img src={Task2image}
+        <img src={CakeImage}
         alt="Patients"
         className='w-[12rem] h-[12rem] md:w-[20rem] md:h-[20rem] object-cover rounded-full shadow-xl border-4 border-whit' />
   
@@ -113,7 +117,7 @@ const WhoWeAre = () => {
       viewport={{ once: true, amount: 0.2 }}   
     >
       <div className='ml-[-5rem]'>
-        <img src={PrisonersImage} 
+        <img src={SisterImage} 
         alt="Prisoners"
         className='w-[15rem] h-[15rem]   rounded-full md:w-[30rem] md:h-[30rem]  object-cover md:rounded-full shadow-xl border-4 border-whit'/>
         

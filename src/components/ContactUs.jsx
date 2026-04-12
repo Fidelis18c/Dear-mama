@@ -48,7 +48,7 @@ const ContactUs = () => {
           <div className=''>
             <img src={HeroImage5} 
                alt="Contact Us" 
-               className='md:w-full md:h-[50rem]' />
+               className='md:w-full md:h-[45rem]' />
            </div>
 
   <div className='md:flex   bg-customPink  '>

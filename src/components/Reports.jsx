@@ -1,5 +1,6 @@
 import React from 'react'
 import ReportImage from '../assets/Report1.png'
+import GeneralImage from '../assets/General1.jpeg';
 import ReportImage2 from '../assets/Report2.png'
 import AnnualImage from '../assets/Annual.jpeg'
 import reportPDF from '../assets/RIPOTI YA DEAR MAMA FOUNDATION-1.pdf'
@@ -33,7 +34,7 @@ const Reports = () => {
        </div>
 
        <div>
-        <img src={ReportImage2}
+        <img src={GeneralImage}
          alt="Report Image 2" 
          className='w-full  h-auto  object-cover md:h-[60rem] '/>
        </div>
